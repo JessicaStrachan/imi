@@ -1,0 +1,34 @@
+{
+  "name": "imi website",
+  "version": "1.0.0",
+  "description": "WordPress theme powered by Brunch for Jessica Strachan",
+  "author": "Jessica Strachan",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch": "rm -rf public && brunch watch",
+    "build": "rm -rf public && brunch build --production",
+    "start": "wp server --host=0.0.0.0:3000 --docroot=../../../",
+    "git-update": "git pull origin develop && git submodule update --init && git submodule update --remote --merge",
+    "deploy": "npm run git-update && npm i && npm run build"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "css-brunch": "^2.0.0",
+    "cssnano": "^3.7.3",
+    "javascript-brunch": "^2.0.0",
+    "mobile-detect": "^1.3.3",
+    "normalize.css": "^4.2.0",
+    "owl.carousel": "^2.1.4",
+    "postcss-brunch": "^0.5.0",
+    "postcss-import": "^8.1.2",
+    "postcss-scss": "^0.1.8",
+    "reset-css": "^2.0.2011012603",
+    "sass-brunch": "^2.6.3",
+    "uglify-js-brunch": "^2.0.0",
+    "wordpress-core": "github:1minus1limited/wordpress-core"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2.7.1"
+  }
+}
