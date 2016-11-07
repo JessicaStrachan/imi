@@ -1,2 +1,14 @@
 @import 'normalize.css',
         'reset-css/reset.css';
+
+input,
+select,
+textarea {
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
