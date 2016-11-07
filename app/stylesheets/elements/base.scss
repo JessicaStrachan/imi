@@ -28,26 +28,7 @@ html {
 body {
   @include font-styles-for($primary-font-regular);
   @include font-size(1.8);
-  background-color: $body-background-color;
-  color: $body-color;
   position: relative;
-}
-
-h1 {
-  @include font-size(4.5);
-  color: $h1-color;
-  text-transform: uppercase;
-}
-
-h2 {
-  @include font-size(3);
-  color: $h2-color;
-}
-
-h3 {
-  @include font-size(2.4);
-  color: $h3-color;
-  text-decoration: underline;
 }
 
 h1,
