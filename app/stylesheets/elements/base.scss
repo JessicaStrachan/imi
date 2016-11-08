@@ -26,8 +26,6 @@ html {
 }
 
 body {
-  @include font-styles-for($primary-font-regular);
-  @include font-size(1.8);
   position: relative;
 }
 
@@ -60,3 +58,4 @@ strong {
 
 em {
   font-style: italic;
+}

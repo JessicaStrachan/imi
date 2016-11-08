@@ -1,0 +1,11 @@
+.header {
+  background-color: $header-background;
+  height: 130px;
+  position: relative;
+
+  .navigation {
+    @include vertical-center(absolute);
+    right: 40px;;
+    width: 50%;
+  }
+}

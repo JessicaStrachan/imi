@@ -55,14 +55,14 @@ class WPTheme extends WPBrunch {
                       . strtolower($name) . '.php';
     if(file_exists($lib_class_name)) require_once($lib_class_name);
   }
-  // public static function include_additional_files() {
-  //   new CustomMetaboxes();
-  //   new CustomPostTypes();
-  //   new TaxonomyFields();
-  //   if(is_admin()) {
-  //     $rdAdmin = new rdAdmin();
-  //     $rdAdmin->hooks();
-  //   }
-  // }
+  public static function include_additional_files() {
+    // new CustomMetaboxes();
+    // new CustomPostTypes();
+    // new TaxonomyFields();
+    if(is_admin()) {
+      // $rdAdmin = new rdAdmin();
+      // $rdAdmin->hooks();
+    }
+  }
 }
 WPTheme::init();
