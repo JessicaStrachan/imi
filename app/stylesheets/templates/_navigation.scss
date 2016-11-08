@@ -1,0 +1,16 @@
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+
+  &--item {
+    @include font-size(1.6);
+    color: $header-nav-items;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
