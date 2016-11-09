@@ -17,6 +17,42 @@
       }
     }
 
+    &--contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-requests {
+        @include font-size(1.8);
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 75%;
+
+        &-link {
+          color: $footer-links;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &-requests,
+      &-email {
+        padding-bottom: 20px;
+      }
+
+      &-email,
+      &-tel {
+        @include font-size(1.8);
+        color: $footer-links;
+        text-decoration: none;
+      }
+    }
+
     &--support {
       border-left: 1px solid $footer-section-border;
     }
