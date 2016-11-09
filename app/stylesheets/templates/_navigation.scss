@@ -10,7 +10,22 @@
     text-transform: uppercase;
 
     a {
+      padding: 0 20px;
+      position: relative;
       text-decoration: none;
+
+      &::after {
+        background-color: $header-nav-items;
+        content: '|';
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    &:last-child {
+      a::after {
+        display: none;
+      }
     }
   }
 }
