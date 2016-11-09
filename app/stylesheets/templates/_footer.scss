@@ -1,0 +1,31 @@
+.footer {
+  background-color: $footer-background;
+  height: 430px;
+
+  &__top {
+    display: flex;
+
+    &--contact,
+    &--support {
+      margin: 20px 0;
+      padding: 20px 40px;
+      width: 50%;
+
+      h2 {
+        @include font-size(3);
+        color: $footer-title-color;
+      }
+    }
+
+    &--support {
+      border-left: 1px solid $footer-section-border;
+    }
+  }
+
+  &__bottom {
+    @include font-size(1.2);
+    color: $footer-legal-color;
+    padding: 40px;
+    text-align: center;
+  }
+}
