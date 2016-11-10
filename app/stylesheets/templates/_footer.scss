@@ -41,7 +41,8 @@
       }
 
       &-requests,
-      &-email {
+      &-email,
+      &-tel {
         padding-bottom: 20px;
       }
 
@@ -55,6 +56,22 @@
 
     &--support {
       border-left: 1px solid $footer-section-border;
+
+      h4 {
+        @include font-size(1.8);
+        color: $footer-support-subtitle;
+      }
+    }
+
+    &--social {
+      display: flex;
+      justify-content: space-between;
+      width: 235px;
+
+      i {
+        @include font-size(1.8);
+        color: $footer-links;
+      }
     }
   }
 

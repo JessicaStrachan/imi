@@ -9,9 +9,15 @@
             </ul>
             <a class="footer__top--contact-email" href="mailto:admin@inclusivemosqueinitiative.org">admin@inclusivemosqueinitiative.org </a>
             <a class="footer__top--contact-tel" href="tel:+44 203 189 1185 ">+44 203 189 1185</a>
+            <div class="footer__top--social">
+              <a class="footer__top--social-link" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="footer__top--social-link" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="footer__top--social-link" href="#"><i class="fa fa-skype"></i></a>
+            </div>
           </div>
           <div class="footer__top--support">
             <h2>Support Us</h2>
+            <h4>Please join our mailing list. All information is kept confidential and your identity is not shared with anyone else.</h4>
           </div>
         </div>
         <div class="footer__bottom">
