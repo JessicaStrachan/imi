@@ -7,6 +7,7 @@ $_color-forest-green: rgb(0, 75, 75);
 $_color-light-red: rgb(185, 80, 110);
 $_color-peach: rgb(230, 150, 160);
 $_color-cream: rgb(235, 210, 170);
+$_color-iron: #d1d3d4;
 
 $header-background: $_color-teal;
 $header-nav-items: $_color-lime-green;
@@ -16,3 +17,4 @@ $footer-section-border: rgba($_color-forest-green, .6);
 $footer-title-color: $_color-white;
 $footer-legal-color: $_color-forest-green;
 $footer-links: $_color-lime-green;
+$footer-support-subtitle: $_color-iron;
