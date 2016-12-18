@@ -1,0 +1,40 @@
+.events {
+  @include horizontal-center(relative);
+  max-width: 1140px;
+
+  .content-title {
+    @include font-size(5);
+    color: $home-section-title;
+    text-align: center;
+  }
+
+  &-block {
+    background-color:$home-upcoming-events-background;
+    height: 460px;
+    width: 360px;
+
+    .events-link {
+      color: $featured-font;
+      height: 100%;
+      text-decoration: none;
+      width: 100%;
+    }
+    .post-image {
+      background-color: $home-section-title;
+      background-size: cover;
+      background-position: center center;
+      height: 50%;
+      width: 100%;
+    }
+  }
+
+  &-grid__col--title {
+    @include font-size(3);
+    padding: 20px 20px 0;
+  }
+
+  &-grid__col--info {
+    @include font-size(1.2);
+    padding: 20px 20px 0;
+  }
+}
