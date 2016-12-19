@@ -1,0 +1,9 @@
+.btn {
+  @include font-size(1.8);
+  height: 50px;
+  margin: 0 auto;
+  padding: 14px 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 232px;
+}

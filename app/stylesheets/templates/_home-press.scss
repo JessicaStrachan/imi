@@ -1,0 +1,36 @@
+.press {
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+  }
+
+  &__block {
+    background-color: pink;
+    height: 75px;
+    margin: 0 10px;
+    transition: opacity .3s ease;
+    width: 25%;
+
+    &--image {
+      height: 75px;
+      width: 25%;
+    }
+
+    &:hover {
+      opacity: .6;
+      transform: opacity .2s ease;
+    }
+  }
+
+  &__btn {
+    background-color: $home-btn-background;
+    color: $home-btn-text-color;
+    margin: 0 auto;
+  }
+}

@@ -1,15 +1,6 @@
 .events {
-  @include horizontal-center(relative);
-  max-width: 1140px;
-
-  .content-title {
-    @include font-size(5);
-    color: $home-section-title;
-    text-align: center;
-  }
-
   &-block {
-    background-color:$home-upcoming-events-background;
+    background-color: $home-upcoming-events-background;
     height: 460px;
     width: 360px;
 
@@ -19,10 +10,11 @@
       text-decoration: none;
       width: 100%;
     }
+
     .post-image {
       background-color: $home-section-title;
-      background-size: cover;
       background-position: center center;
+      background-size: cover;
       height: 50%;
       width: 100%;
     }
