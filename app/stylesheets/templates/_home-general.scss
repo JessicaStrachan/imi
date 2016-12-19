@@ -1,0 +1,5 @@
+.content-title {
+  @include font-size(5);
+  color: $home-section-title;
+  text-align: center;
+}

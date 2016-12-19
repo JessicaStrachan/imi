@@ -1,9 +1,14 @@
 @import 'tools/mixins',
         'tools/gridz';
 
+@import 'objects/wrappers',
+        'objects/btns';
+
 @import 'settings/variables';
 
 @import 'templates/header',
         'templates/navigation',
         'templates/footer',
-        'templates/home-events';
+        'templates/home-events',
+        'templates/home-general',
+        'templates/home-press';
