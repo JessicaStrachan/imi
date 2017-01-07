@@ -36,6 +36,11 @@
 
           a {
             text-decoration: none;
+            transition: opacity .3s ease;
+
+            &:hover {
+              opacity: .6;
+            }
           }
         }
       }
@@ -51,6 +56,11 @@
         @include font-size(1.8);
         color: $footer-links;
         text-decoration: none;
+        transition: opacity .6s ease;
+
+        &:hover {
+          opacity: .6;
+        }
       }
     }
 
@@ -67,6 +77,14 @@
       display: flex;
       justify-content: space-between;
       width: 235px;
+
+      &-link {
+        transition: opacity .3s ease;
+        
+        &:hover {
+          opacity: .6;
+        }
+      }
 
       i {
         @include font-size(1.8);
