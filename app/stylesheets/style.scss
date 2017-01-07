@@ -1,10 +1,14 @@
+@import 'settings/variables';
+
 @import 'tools/mixins',
         'tools/gridz';
 
+@import 'globals/reset';
+
+@import 'elements/base';
+
 @import 'objects/wrappers',
         'objects/btns';
-
-@import 'settings/variables';
 
 @import 'templates/header',
         'templates/navigation',
