@@ -1,6 +1,3 @@
-
-
-
 # IMI Wordpress site
 
 ## Prerequisites
