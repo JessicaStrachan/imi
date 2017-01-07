@@ -15,8 +15,6 @@ $header-nav-items: $_color-lime-green;
 $home-section-title: $_color-light-red;
 $home-upcoming-events-background: $_color-lime-green;
 $featured-font: $_color-teal;
-$home-btn-background: $_color-lime-green;
-$home-btn-text-color: $_color-teal;;
 
 $footer-background: $_color-teal;
 $footer-section-border: rgba($_color-forest-green, .6);
@@ -24,3 +22,8 @@ $footer-title-color: $_color-white;
 $footer-legal-color: $_color-forest-green;
 $footer-links: $_color-lime-green;
 $footer-support-subtitle: $_color-iron;
+
+$lime-btn-background: $_color-lime-green;
+$lime-btn-text-color: $_color-teal;
+$lime-btn-background-hover: $_color-teal;
+$lime-btn-text-color-hover: $_color-lime-green;
