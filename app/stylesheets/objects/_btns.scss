@@ -7,3 +7,14 @@
   text-transform: uppercase;
   width: 232px;
 }
+
+.lime__btn {
+  background-color: $lime-btn-background;
+  color: $lime-btn-text-color;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: $lime-btn-background-hover;
+    color: $lime-btn-text-color-hover;
+  }
+}
