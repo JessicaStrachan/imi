@@ -1,0 +1,19 @@
+.quote {
+  background-color: $header-quote-background-color;
+
+  .container {
+      max-width: 1200px;
+      padding: 40px;
+      text-align: center;
+  }
+
+  &__title {
+    @include font-size(5);
+    color: $header-quote-color;
+  }
+
+  &__author {
+    @include font-size(2);
+    color: $header-quote-author-color;
+  }
+}
