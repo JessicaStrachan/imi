@@ -1,0 +1,18 @@
+.post {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__title {
+    &--date {
+      @include font-size(2);
+      color: $internal-post-date;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    @include font-size(1.6);
+    color: $internal-paragraph-color;
+    padding: 0 40px;
+  }
+}
