@@ -1,0 +1,45 @@
+.team {
+  .container {
+    padding: 0 40px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    max-width: 550px;
+
+    &--image {
+      background-color: $_color-peach;
+      height: 270px;
+      width: 50%;
+    }
+
+    &--info {
+      background-color: $team-block-background-color;
+      color: $team-block-text-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      width: 50%;
+    }
+
+    &--name {
+      @include font-size(2.5);
+    }
+
+    &--bio {
+      @include font-size(1.6);
+    }
+
+    &--social i {
+      @include font-size(2);
+      padding-right: 10px;
+      transition: opacity .3s ease;
+
+      &:hover {
+        opacity: .6;
+      }
+    }
+  }
+}
