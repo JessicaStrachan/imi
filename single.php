@@ -23,7 +23,5 @@ if (have_posts()) : while (have_posts()) : the_post();
   </section>
 </div>
 
-
-
  <?php
  get_footer();
