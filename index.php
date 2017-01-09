@@ -3,6 +3,12 @@
 * Template Name: Blog page
 */
 
+$post_category = get_the_category();
+$data_filters = '';
+foreach($post_category as $category):
+  $data_filters .= $category->slug . ' ';
+endforeach;
+
 get_header();
 get_template_part('templates/header-quote', 'tpl');
 ?>
@@ -23,7 +29,10 @@ get_template_part('templates/header-quote', 'tpl');
   	<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
   		<li class="block grid__col col-4">
         <a class="block__link" href="<?php the_permalink(); ?>">
-          <div class="block__img"></div>
+
+          <?php $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
+
+          <div class="block__img" style="background-image: url('<?php echo $post_image[0]; ?>')"></div>
           <div class="block__info">
             <h3 class="block__info--title"><?php the_title(); ?></h3>
             <p class="block__info--excerpt"><?php the_excerpt(); ?></p>

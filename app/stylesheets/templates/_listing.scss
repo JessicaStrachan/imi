@@ -21,6 +21,8 @@
 
   &__img {
     background-color: $blog-listing-image-background;
+    background-position: center center;
+    background-size: cover;
     height: 50%;
   }
 
