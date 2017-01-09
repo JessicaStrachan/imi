@@ -17,6 +17,16 @@
   &__link {
     height: 100%;
     text-decoration: none;
+    transition: opacity .3s ease;
+    overflow: hidden;
+
+    &:hover {
+      opacity: .6;
+
+      .block__img {
+        transform: scale(1.2);
+      }
+    }
   }
 
   &__img {
@@ -24,6 +34,7 @@
     background-position: center center;
     background-size: cover;
     height: 50%;
+    transition: transform .3s ease;
   }
 
   &__info {
