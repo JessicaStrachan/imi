@@ -56,12 +56,12 @@ class WPTheme extends WPBrunch {
     if(file_exists($lib_class_name)) require_once($lib_class_name);
   }
   public static function include_additional_files() {
-    // new CustomMetaboxes();
-    // new CustomPostTypes();
+    new CustomMetaboxes();
+    new CustomPostTypes();
     // new TaxonomyFields();
     if(is_admin()) {
-      // $rdAdmin = new rdAdmin();
-      // $rdAdmin->hooks();
+      $imiAdmin = new imiAdmin();
+      $imiAdmin->hooks();
     }
   }
 }
