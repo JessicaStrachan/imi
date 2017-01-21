@@ -8,20 +8,6 @@
     height: 60px;
     left: 40px;
     width: 160px;
-
-    &::before {
-      background-image: image-url('assets/images/imi-sprite.png');
-      background-position: -0 -0;
-      background-repeat: no-repeat;
-      background-color: $header-nav-items;
-      content: '';
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
   }
 
   .navigation {
