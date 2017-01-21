@@ -20,7 +20,6 @@ $results = $events->query($query_args);
     $event_fields = new CMB2Fields(get_the_ID());
     ?>
 
-
     <li class="block grid__col">
       <a class="block__link" href="<?php the_permalink(); ?>">
 
@@ -35,7 +34,6 @@ $results = $events->query($query_args);
 
       </a>
     </li>
-
 
   <?php endwhile; endif; ?>
 </ul>
