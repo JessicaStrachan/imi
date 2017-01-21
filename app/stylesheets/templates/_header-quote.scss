@@ -1,5 +1,7 @@
 .quote {
   background-color: $header-quote-background-color;
+  background-position: center center;
+  background-size: cover;
 
   .container {
       max-width: 1200px;
