@@ -14,7 +14,7 @@ Class CustomPostTypes {
       ],
       'public' => true,
       'menu_position' => '28',
-      'menu_icon' => 'dashicons-editor-quote',
+      'menu_icon' => 'dashicons-calendar-alt',
       'capability_type' => 'post',
       'has_archive' => true,
       'supports' => [

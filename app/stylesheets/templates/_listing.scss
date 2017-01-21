@@ -1,4 +1,8 @@
 .blog {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 40px;
+
   &__container {
     display: flex;
     flex-direction: row;
@@ -11,8 +15,8 @@
   display: flex;
   flex-direction: column;
   height: 450px;
-  margin: 20px 40px 0 0;
-  width: 33%;
+  margin-top: 20px;
+  max-width: 33%;
 
   &__link {
     height: 100%;
@@ -63,4 +67,20 @@
 
 .block:nth-child(3n+3) {
   margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog {
+    padding: 0 20px
+  }
+
+  .block {
+    max-width: 48%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .block {
+    max-width: 100%;
+  }
 }
