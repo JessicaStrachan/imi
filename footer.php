@@ -21,6 +21,7 @@
           </div>
         </div>
         <div class="footer__bottom">
+          <img src="<?php echo get_template_directory_uri(); ?>/public/images/imi-logo-footer.png" alt="Imi Logo"/>
           <p>Inclusive Mosque Initiative is a registered charity in England and Wales No. 1161730</p>
           <p>Inclusive Mosque Initiative - &copy; Copyright 2016</p>
         </div>

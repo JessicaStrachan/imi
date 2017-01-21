@@ -1,6 +1,5 @@
 .footer {
   background-color: $footer-background;
-  height: 430px;
 
   &__top {
     display: flex;
@@ -80,7 +79,7 @@
 
       &-link {
         transition: opacity .3s ease;
-        
+
         &:hover {
           opacity: .6;
         }
