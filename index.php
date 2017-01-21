@@ -10,10 +10,9 @@ foreach($post_category as $category):
 endforeach;
 
 get_header();
-get_template_part('templates/header-quote', 'tpl');
 ?>
 
-<h2 class="content-title">Blog</h2>
+<h2 class="content-title"><?php the_title(); ?></h2>
 
 <section class="blog">
 
@@ -27,7 +26,7 @@ get_template_part('templates/header-quote', 'tpl');
 
   	<!-- the loop -->
   	<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-  		<li class="block grid__col col-4">
+  		<li class="block grid__col">
         <a class="block__link" href="<?php the_permalink(); ?>">
 
           <?php $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
