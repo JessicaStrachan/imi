@@ -45,5 +45,20 @@ $events_quote = new_cmb2_box([
 $events_quote->add_field([
   'desc' => __('Enter text to be displayed as quote'),
   'id' => $prefix . 'event_quote_text',
-  'type' => 'wysiwyg'
+  'type' => 'text'
+]);
+
+$events_quote_author = new_cmb2_box([
+  'id' => 'event_quote_author',
+  'title' => __('Event Quote Author', 'imi'),
+  'object_types' => ['events'],
+  'context' => 'normal',
+  'priority' => 'high',
+  'show_names' => true
+]);
+
+$events_quote_author->add_field([
+  'desc' => __('Enter text to be displayed as author of quote'),
+  'id' => $prefix . 'event_quote_author_text',
+  'type' => 'text'
 ]);
