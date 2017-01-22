@@ -14,8 +14,8 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 
 <section class="quote" style="background-image: url('<?php echo $post_image[0]; ?>')">
   <div class="container">
-    <h2 class="quote__title"><?php echo $blog->format_content($blog->field('blog_quote_text')); ?></h2>
-    <h2 class="quote__author"><?php echo $blog->format_content($blog->field('blog_quote_author_text')); ?></h2>
+    <h2 class="quote__title"><?php echo $event->format_content($event->field('event_quote_text')); ?></h2>
+    <h2 class="quote__author"><?php echo $event->format_content($event->field('event_quote_author_text')); ?></h2>
   </div>
 </section>
 
