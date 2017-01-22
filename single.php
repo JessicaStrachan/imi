@@ -1,11 +1,24 @@
 <?php
 get_header();
-get_template_part('templates/header-quote', 'tpl');
+
+$blog = new CMB2Fields(get_the_ID());
+$render_args = [
+  'title' => get_the_title(),
+  'description' => get_the_content()
+];
+
 if (have_posts()) : while (have_posts()) : the_post();
 
  endwhile;
  endif;
 ?>
+
+<section class="quote" style="background-image: url('<?php echo $post_image[0]; ?>')">
+  <div class="container">
+    <h2 class="quote__title"><?php echo $event->format_content($event->field('event_quote_text')); ?></h2>
+    <h2 class="quote__author"><?php echo $event->format_content($event->field('event_quote_author_text')); ?></h2>
+  </div>
+</section>
 
 <div class="post">
   <section class="post__title">
