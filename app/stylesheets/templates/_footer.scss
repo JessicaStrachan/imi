@@ -99,3 +99,37 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .footer__top {
+    flex-direction: column;
+
+    &--contact,
+    &--support {
+      text-align: center;
+      width: 100%;
+
+      * {
+        width: 100%;
+      }
+    }
+
+    &--social-link i {
+      @include font-size(3.8);
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footer__top--contact,
+  .footer__top--support {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer__top--contact,
+  .footer__top--support {
+    padding: 10px;
+  }
+}
