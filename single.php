@@ -2,10 +2,6 @@
 get_header();
 
 $blog = new CMB2Fields(get_the_ID());
-$render_args = [
-  'title' => get_the_title(),
-  'description' => get_the_content()
-];
 
 if (have_posts()) : while (have_posts()) : the_post();
 
