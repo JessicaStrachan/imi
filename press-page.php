@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: About page
+* Template Name: Press page
 */
 get_header();
 
@@ -16,7 +16,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
   </div>
 </section>
 
+<h1>Press</h1>
+
 <?php
-get_template_part('templates/two-block', 'tpl');
-get_template_part('templates/our-team', 'tpl');
 get_footer();
