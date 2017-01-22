@@ -1,11 +1,19 @@
 <?php
 get_header();
-get_template_part('templates/header-quote', 'tpl');
+
+$blog = new CMB2Fields(get_the_ID());
+
 if (have_posts()) : while (have_posts()) : the_post();
 
- endwhile;
- endif;
+$post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
 ?>
+
+<section class="quote" style="background-image: url('<?php echo $post_image[0]; ?>')">
+  <div class="container">
+    <h2 class="quote__title"><?php echo $blog->format_content($blog->field('blog_quote_text')); ?></h2>
+    <h2 class="quote__author"><?php echo $blog->format_content($blog->field('blog_quote_author_text')); ?></h2>
+  </div>
+</section>
 
 <div class="post">
   <section class="post__title">
@@ -24,4 +32,6 @@ if (have_posts()) : while (have_posts()) : the_post();
 </div>
 
  <?php
+endwhile;
+endif;
  get_footer();
