@@ -16,7 +16,37 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
   </div>
 </section>
 
-<h1>Press</h1>
+<h1 class="content-title">Press</h1>
+<section class="press grid">
+  <div class="press__item">
+    <a class="press__item--link" href="#">
+      <div class="press__item--image"></div>
+      <h2 class="press__item--title">The Daily Newspaper</h2>
+      <p class="press__item--date">26/03/1992</p>
+    </a>
+  </div>
+  <div class="press__item">
+    <a class="press__item--link" href="#">
+      <div class="press__item--image"></div>
+      <h2 class="press__item--title">The Daily Newspaper</h2>
+      <p class="press__item--date">26/03/1992</p>
+    </a>
+  </div>
+  <div class="press__item">
+    <a class="press__item--link" href="#">
+      <div class="press__item--image"></div>
+      <h2 class="press__item--title">The Daily Newspaper</h2>
+      <p class="press__item--date">26/03/1992</p>
+    </a>
+  </div>
+  <div class="press__item">
+    <a class="press__item--link" href="#">
+      <div class="press__item--image"></div>
+      <h2 class="press__item--title">The Daily Newspaper</h2>
+      <p class="press__item--date">26/03/1992</p>
+    </a>
+  </div>
+</section>
 
 <?php
 get_footer();
