@@ -1,0 +1,65 @@
+// normalize.css v3.0.2 | MIT License | git.io/normalize
+
+html{
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+dt,
+blockquote,
+fieldset,
+figure,
+figcaption,
+button {
+  margin: 0;
+  font-weight: normal;
+}
+
+
+details,
+summary,
+main {
+  display: block;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+textarea {
+  overflow: auto;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+td,
+th,
+fieldset,
+legend {
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+}
+
+legend{
+  width: 100%;
+}

@@ -1,9 +1,8 @@
-@import 'settings/variables';
+@import 'settings/variables',
+        'settings/reset.scss';
 
 @import 'tools/mixins',
         'tools/gridz';
-
-@import 'globals/reset';
 
 @import 'elements/base';
 
