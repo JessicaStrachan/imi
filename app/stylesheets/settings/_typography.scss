@@ -1,0 +1,27 @@
+.content-title {
+  text-align: center;
+
+  &--light-red {
+    color: $home-section-title;
+  }
+}
+
+.heading--one {
+  @include font-size(5);
+}
+
+.heading--two {
+  @include font-size(3);
+}
+
+.heading--three {
+  @include font-size(1.8);
+}
+
+.heading--four {
+  @include font-size(1.2);
+}
+
+.heading--bold {
+  font-weight: 700
+}
