@@ -1,4 +1,49 @@
 <?php
+$events_date = new_cmb2_box([
+  'id' => 'event_date',
+  'title' => __('Event Date', 'imi'),
+  'object_types' => ['events'],
+  'context' => 'normal',
+  'priority' => 'high',
+  'show_names' => true
+]);
+
+$events_date->add_field([
+  'desc' => __('Enter text to be displayed as date and time on listing page card'),
+  'id' => $prefix . 'event_date_text',
+  'type' => 'text'
+]);
+
+$events_address = new_cmb2_box([
+  'id' => 'event_address',
+  'title' => __('Event Address', 'imi'),
+  'object_types' => ['events'],
+  'context' => 'normal',
+  'priority' => 'high',
+  'show_names' => true
+]);
+
+$events_address->add_field([
+  'desc' => __('Enter text to be displayed as address on listing page card'),
+  'id' => $prefix . 'event_address_text',
+  'type' => 'text'
+]);
+
+
+$events_excerpt = new_cmb2_box([
+  'id' => 'event_excerpt',
+  'title' => __('Event Exceprt', 'imi'),
+  'object_types' => ['events'],
+  'context' => 'normal',
+  'priority' => 'high',
+  'show_names' => true
+]);
+
+$events_excerpt->add_field([
+  'desc' => __('Enter text to be displayed as excerpt on listing page card'),
+  'id' => $prefix . 'event_excerpt_text',
+  'type' => 'text'
+]);
 
 $events_banner_images = new_cmb2_box([
   'id' => 'events_images',
