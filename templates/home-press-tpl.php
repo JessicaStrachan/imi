@@ -14,5 +14,5 @@
           <div class="press__block--image"></div>
       </a>
     </section>
-    <a class="press__btn btn lime__btn" href="#">View Articles</a>
+    <a class="press__btn btn btn--lime" href="#">View Articles</a>
 </article>

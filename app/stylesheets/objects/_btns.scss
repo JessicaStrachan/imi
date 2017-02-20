@@ -1,20 +1,24 @@
 .btn {
   @include font-size(1.8);
   height: 50px;
-  margin: 0 auto;
   padding: 14px 48px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  width: 232px;
-}
 
-.lime__btn {
-  background-color: $lime-btn-background;
-  color: $lime-btn-text-color;
-  transition: background-color .3s ease;
+  &--slider {
+    bottom: -40px;
+    position: absolute;
+  }
 
-  &:hover {
-    background-color: $lime-btn-background-hover;
-    color: $lime-btn-text-color-hover;
+  &--lime {
+    background-color: $lime-btn-background;
+    color: $lime-btn-text-color;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background-color: $lime-btn-background-hover;
+      color: $lime-btn-text-color-hover;
+    }
   }
 }

@@ -2,6 +2,7 @@
   background-color: $header-background;
   height: 130px;
   position: relative;
+  z-index: 1;
 
   &__logo {
     @include vertical-center(absolute);
