@@ -1,86 +1,68 @@
-.blog {
-  margin: 0 auto;
-  max-width: 1100px;
-  padding: 0 40px;
+.card {
+  background-color:$blog-listing-block-background;
+  margin: 0 40px 40px 0;
+  max-width: 325px;
+  min-height: 450px;
 
-  &__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
+  &:nth-child(3n+3) {
+    margin-right: 0;
   }
-}
-
-.block {
-  display: flex;
-  flex-direction: column;
-  height: 450px;
-  margin-top: 20px;
-  max-width: 33%;
 
   &__link {
     height: 100%;
     text-decoration: none;
-    transition: opacity .3s ease;
-    overflow: hidden;
+    width: 100%;
 
     &:hover {
-      opacity: .6;
-
-      .block__img {
-        transform: scale(1.2);
+      .card__info .card__read-more {
+        text-decoration: underline;
       }
     }
   }
 
-  &__img {
-    background-color: $blog-listing-image-background;
+  &__media {
     background-position: center center;
     background-size: cover;
     height: 50%;
-    transition: transform .3s ease;
   }
 
   &__info {
-    background-color:$blog-listing-block-background;
     color: $blog-listing-block-text-color;
     display: flex;
     flex-direction: column;
-    height: 50%;
     justify-content: space-between;
+    height: 50%;
     padding: 20px;
-
-    &--title {
-      @include font-size(3);
-    }
-
-    &--excerpt {
-      @include font-size(1.2);
-    }
-
-    &--read-more {
-      color: $blog-listing-read-more-color;
-      text-transform: uppercase;
-    }
   }
-}
 
-.block:nth-child(3n+3) {
-  margin-right: 0;
+  &__read-more {
+    @include font-size(1.8);
+    color: $blog-listing-read-more-color;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .blog {
-    padding: 0 20px
+  .col-4 {
+    width: 48%;
   }
 
-  .block {
-    max-width: 48%;
+  .card {
+    margin-right: 20px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .block {
-    max-width: 100%;
+@media only screen and (max-width: 650px) {
+  .col-4 {
+    width: 100%;
+  }
+
+  .card {
+    margin: 0 0 20px 0;
   }
 }

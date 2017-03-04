@@ -1,9 +1,9 @@
-@import 'settings/variables';
-
 @import 'tools/mixins',
         'tools/gridz';
 
-@import 'globals/reset';
+@import 'settings/variables',
+        'settings/reset.scss',
+        'settings/typography.scss';
 
 @import 'elements/base';
 
@@ -14,10 +14,10 @@
         'templates/navigation',
         'templates/footer',
         'templates/home-events',
-        'templates/home-general',
         'templates/home-press',
         'templates/header-quote',
         'templates/two-block',
         'templates/our-team',
         'templates/internal-page',
-        'templates/listing';
+        'templates/listing',
+        'templates/press';
