@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="header">
-        <section class="header__logo">
+        <a href="/" class="header__logo">
           <img src="<?php echo get_template_directory_uri(); ?>/public/images/imi-logo-header.png" alt="Imi Logo"/>
-        </section>
+        </a>
         <section class="navigation">
             <?php get_template_part('templates/navigation', 'tpl'); ?>
         </section>
