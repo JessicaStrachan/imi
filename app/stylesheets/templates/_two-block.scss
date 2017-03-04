@@ -2,22 +2,30 @@
   background-color: $visions-branch-background-color;
   display: flex;
   flex-direction: row;
-  padding: 40px 20px;
+  padding: 40px 130px;
 
   &__section {
     color: $vision_branch-text-color;
-    padding: 0 20px;
     text-align: center;
     width: 50%;
 
-    &--title {
-      @include font-size(2.5);
+    &--padding-right {
+      border-right: 1px solid $vision_branch-text-color;
+      padding-right: 65px
     }
 
-    &--text {
-      @include font-size(1.8);
+    &--padding-left {
+      padding-left: 65px
     }
   }
+
+  &__title {
+    @include font-size(2.5);
+  }
+
+  &__text {
+    @include font-size(2.5);
+    }
 }
 
 @media only screen and (max-width: 768px) {

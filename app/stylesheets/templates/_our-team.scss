@@ -1,45 +1,47 @@
 .team {
-  .container {
-    padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-block {
+  display: flex;
+  flex-direction: row;
+  height: 270px;
+  margin-bottom:  30px;
+  max-width: 550px;
+
+  &__image {
+    background-color: $_color-peach;
+    height: 270px;
   }
 
-  &__block {
+  &__info {
+    background-color: $team-block-background-color;
+    color: $team-block-text-color;
     display: flex;
-    flex-direction: row;
-    max-width: 550px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 50%;
+  }
 
-    &--image {
-      background-color: $_color-peach;
-      height: 270px;
-      width: 50%;
-    }
+  &__name {
+    @include font-size(2.5);
+    margin: 0;
+  }
 
-    &--info {
-      background-color: $team-block-background-color;
-      color: $team-block-text-color;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 20px;
-      width: 50%;
-    }
+  &__bio {
+    @include font-size(1.6);
+  }
 
-    &--name {
-      @include font-size(2.5);
-    }
+  &__social i {
+    @include font-size(2);
+    padding-right: 10px;
+    transition: opacity .3s ease;
 
-    &--bio {
-      @include font-size(1.6);
-    }
-
-    &--social i {
-      @include font-size(2);
-      padding-right: 10px;
-      transition: opacity .3s ease;
-
-      &:hover {
-        opacity: .6;
-      }
+    &:hover {
+      opacity: .6;
     }
   }
 }
