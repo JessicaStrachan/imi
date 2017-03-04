@@ -9,6 +9,8 @@ $_color-peach: rgb(230, 150, 160);
 $_color-cream: rgb(235, 210, 170);
 $_color-iron: #d1d3d4;
 $_color-dark-grey: #333;
+$_color-gallery-grey: #eee;
+$_color-gray: #888;
 
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 
@@ -32,6 +34,9 @@ $lime-btn-text-color: $_color-teal;
 $lime-btn-background-hover: $_color-teal;
 $lime-btn-text-color-hover: $_color-lime-green;
 
+$secondary-btn-background: $_color-ruby;
+$secondary-btn-color: $_color-cream;
+
 $header-quote-background-color: $_color-light-red;
 $header-quote-color: $_color-cream;
 $header-quote-author-color: $_color-cream;
@@ -52,3 +57,7 @@ $internal-paragraph-color: $_color-dark-grey;
 
 $press-page-image-background: $_color-ruby;
 $press-page-link-color: $_color-teal;
+
+$contact-address: $_color-ruby;
+$contact-input-background: $_color-gallery-grey;
+$contact-input-color: $_color-gray;

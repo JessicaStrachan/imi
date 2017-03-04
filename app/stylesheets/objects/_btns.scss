@@ -5,7 +5,17 @@
   padding: 14px 48px;
   text-decoration: none;
   text-transform: uppercase;
-  width: 232px;
+
+  &--secondary {
+    background-color: $secondary-btn-background;
+    color: $secondary-btn-color;
+    transition: opacity .3s ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
 }
 
 .lime__btn {
