@@ -1,17 +1,18 @@
 .header {
   background-color: $header-background;
-  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
   position: relative;
 
   &__logo {
-    @include vertical-center(absolute);
     height: 60px;
-    left: 40px;
     width: 160px;
   }
+}
 
-  .navigation {
-    @include vertical-center(absolute);
-    right: 40px;
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px
   }
 }
