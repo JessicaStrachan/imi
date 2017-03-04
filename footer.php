@@ -34,6 +34,7 @@
     </main>
 
     <?php wp_footer(); ?>
+    <script type="text/javascript"></script>
 
   </body>
 </html>

@@ -1,0 +1,85 @@
+/* Slideshow container */
+.slider {
+  max-height: 100vh;
+  position: relative;
+  margin: -130px auto auto;
+
+  &__container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 35px auto 0;
+    max-width: 100%;
+    padding: 40px 80px;
+  }
+
+  .slider__text {
+    background-color: rgba($_color-teal, .6);
+    color: $_color-iron;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+  }
+}
+
+.prev,
+ .next {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% + 40px);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

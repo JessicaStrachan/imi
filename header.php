@@ -3,6 +3,8 @@
   <head>
     <?php wp_head(); ?>
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+      <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+      <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   </head>
   <body>
     <header class="header">
