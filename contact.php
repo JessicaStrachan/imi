@@ -42,14 +42,14 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 		<input class="form__input form__input--no-right-space col-6" type="text" name="surname" placeholder="surname">
 		<input class="form__input col-6" type="text" name="email" placeholder="email">
 		<input class="form__input form__input--no-right-space col-6" type="text" name="number" placeholder="contact number">
-		<input class="form__input col-12" type="textarea" name="summary-proposal" maxlength="3000" placeholder="summary of research proposal (no more than 500 words please)">
-		<input class="form__input col-6" type="textarea" name="summary-proposal" maxlength="3000" placeholder="summary of duration, methodology, and type of access requested">
-		<input class="form__input form__input--no-right-space col-6" type="textarea" name="summary-others" maxlength="3000" placeholder="What other sites, groups or organisations have been approached for this research?">
+		<textarea class="form__input form__input--tall form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="summary of research proposal (no more than 500 words please)"></textarea>
+		<textarea class="form__input col-6" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="summary of duration, methodology, and type of access requested"></textarea>
+		<textarea class="form__input form__input--no-right-space col-6" type="textarea" name="summary-others" maxlength="3000" rows="8" placeholder="What other sites, groups or organisations have been approached for this research?"></textarea>
 		<input class="form__input col-6" type="text" name="institution" placeholder="institution/affiliation">
 		<input class="form__input form__input--no-right-space col-6" type="text" name="supervisors" placeholder="man supervisors (if appropriate)">
-		<input class="form__input col-6" type="textarea" name="outputs" maxlength="3000" placeholder="Potential/predicted outputs (if appropriate)">
-		<input class="form__input form__input--no-right-space col-6" type="textarea" name="interest" maxlength="3000" placeholder="Researchers interest in IMI">
-		<input type="submit" name="submit">
+		<textarea class="form__input col-6" type="textarea" name="outputs" maxlength="3000" rows="8" placeholder="Potential/predicted outputs (if appropriate)"></textarea>
+		<textarea class="form__input form__input--no-right-space col-6" type="textarea" name="interest" maxlength="3000" rows="8" placeholder="Researchers interest in IMI"></textarea>
+		<input class="form__btn btn btn--secondary" type="submit" name="submit">
 	</form>
 </section>
 
