@@ -1,10 +1,10 @@
 <ul class="navigation js-nav-menu">
-  <li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
-  <li class="navigation__item"><a class="navigation__link" href="#">Advice</a></li>
-  <li class="navigation__item"><a class="navigation__link" href="#">Events</a></li>
-  <li class="navigation__item"><a class="navigation__link" href="#">Donate</a></li>
-  <li class="navigation__item"><a class="navigation__link" href="#">Blog</a></li>
-  <li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
+  <li class="navigation__item"><a class="navigation__link" href="/about">About</a></li>
+  <li class="navigation__item"><a class="navigation__link" href="/advice">Advice</a></li>
+  <li class="navigation__item"><a class="navigation__link" href="/events">Events</a></li>
+  <li class="navigation__item"><a class="navigation__link" href="/donate">Donate</a></li>
+  <li class="navigation__item"><a class="navigation__link" href="/blog">Blog</a></li>
+  <li class="navigation__item"><a class="navigation__link" href="/contact">Contact</a></li>
 </ul>
 
 <div class="menu-icon js-menu-icon">

@@ -1,0 +1,77 @@
+.address {
+	@include font-size(2);
+	text-align: center;
+	color: $contact-address;
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+		padding-top: 20px;
+	}
+
+	&__link {
+		text-decoration: none;
+		transition: opacity .3s ease;
+		&:hover {
+			opacity: .6;
+		}
+	}
+}
+
+.form-tabs {
+	margin: 0 auto;
+	width: 730px;
+
+	&__button {
+		border: none;
+	}
+}
+
+.form {
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+	max-width: 1120px;
+
+	&__input {
+		@include font-size(1.6);
+		background-color: $contact-input-background;
+		border: none;
+		color: $contact-input-color;
+		margin: 0 15px 15px 0;
+		padding: 20px 15px;
+		width: 49%;
+
+		&--full-width {
+			width: 100%;
+		}
+
+		&--no-right-space {
+			margin-right: 0;
+		}
+
+		&:focus {
+			border: 1px solid $contact-input-focus-color;
+			outline: none;
+		}
+	}
+
+	&__btn {
+		border: none;
+		margin-top: 25px;
+	}
+}
+
+@media screen and(max-width: 789px) {
+	.form {
+		margin-bottom: 20px;
+
+		&__input {
+			margin: 0 0 20px 0;
+			width: 100%;
+		}
+
+		&__btn {
+			margin-top: 5px;
+		}
+	}
+}
