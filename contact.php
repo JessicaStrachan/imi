@@ -49,13 +49,25 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 		<input class="form__input form__input--no-right-space col-6" type="text" name="supervisors" placeholder="man supervisors (if appropriate)">
 		<textarea class="form__input col-6" type="textarea" name="outputs" maxlength="3000" rows="8" placeholder="Potential/predicted outputs (if appropriate)"></textarea>
 		<textarea class="form__input form__input--no-right-space col-6" type="textarea" name="interest" maxlength="3000" rows="8" placeholder="Researchers interest in IMI"></textarea>
-		<input class="form__btn btn btn--secondary" type="submit" name="submit">
+		<input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
 	</form>
   <form class="form grid">
     <input class="form__input col-6" type="text" name="name" placeholder="name">
 		<input class="form__input form__input--no-right-space col-6" type="text" name="surname" placeholder="surname">
+    <input class="form__input col-6" type="text" name="email" placeholder="email">
+		<input class="form__input form__input--no-right-space col-6" type="text" name="number" placeholder="contact number">
     <textarea class="form__input form__input--full-width form__input--no-right-space col-12" maxlength="3000" rows="15" type="textarea" placeholder="Your Message"></textarea>
-    <input class="form__btn btn btn--secondary" type="submit" name="submit">
+    <input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
+  </form>
+  <form class="form grid">
+    <input class="form__input col-6" type="text" name="name" placeholder="name">
+		<input class="form__input form__input--no-right-space col-6" type="text" name="surname" placeholder="surname">
+		<input class="form__input col-6" type="text" name="email" placeholder="email">
+		<input class="form__input form__input--no-right-space col-6" type="text" name="number" placeholder="contact number">
+    <textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="Why do you want to write an article/make a programme on Muslims? Do you have any specific angle/points you want to make and why?"></textarea>
+    <textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="How can such coverage benefit Inclusive Mosque Initiative and our stakeholders?"></textarea>
+    <textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="Which other organisations or people have you approached in relation to this interview/programme/research and why?"></textarea>
+    <input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
   </form>
 </section>
 
