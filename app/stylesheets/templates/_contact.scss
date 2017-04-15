@@ -19,8 +19,9 @@
 }
 
 .form-tabs {
+	display: flex;
 	margin: 0 auto;
-	width: 730px;
+	max-width: 730px;
 
 	&__button {
 		border: none;
@@ -72,6 +73,20 @@
 
 		&__btn {
 			margin-top: 5px;
+		}
+	}
+}
+
+@media screen and(max-width: 767px) {
+	.form-tabs {
+		flex-direction: column;
+
+		&__button {
+			width: 100%;
+		}
+
+		&__button:not(:last-child) {
+			margin-bottom: 10px;
 		}
 	}
 }
