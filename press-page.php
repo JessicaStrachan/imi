@@ -17,7 +17,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 </section>
 
 <h1 class="content-title">Press</h1>
-<section class="press grid">
+<section class="press grid container">
   <div class="press__item">
     <a class="press__link" href="<?php echo $page->format_content($page->field('press_article_url')); ?>">
       <div class="press__logo">
