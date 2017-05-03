@@ -19,7 +19,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 <h1 class="content-title">Press</h1>
 <section class="press grid">
   <div class="press__item">
-    <a class="press__item--link" href="#">
+    <a class="press__item--link" href="<?php echo $page->format_content($page->field('press_article_url')); ?>">
       <div class="press__item--image"></div>
       <h2 class="press__item--title">The Daily Newspaper</h2>
       <p class="press__item--date">26/03/1992</p>

@@ -2,7 +2,9 @@
   <h2 class="content-title">Article Section title</h2>
     <section class="press__container">
       <a href="#" class="press__block">
-          <div class="press__block--image"></div>
+          <div class="press__block--image">
+            <img src="../app/assets/images/"
+          </div>
       </a>
       <a href="#" class="press__block">
           <div class="press__block--image"></div>

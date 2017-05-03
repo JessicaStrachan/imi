@@ -29,6 +29,28 @@ Class CustomPostTypes {
       ]
     ];
 
+    $custom_post_types['press'] = [
+      'labels' => [
+        'name' => 'Press',
+        'singular_name' => 'Press'
+      ],
+      'public' => true,
+      'menu_position' => '28',
+      'menu_icon' => 'dashicons-format-aside',
+      'capability_type' => 'post',
+      'has_archive' => true,
+      'supports' => [
+        'title',
+        'editor',
+        'thumbnail',
+        'page-attributes'
+      ],
+      'rewrite' => [
+        'slug' => 'press',
+        'with_front' => false
+      ]
+    ];
+
     $this->register_custom_post_types($custom_post_types);
   }
 
