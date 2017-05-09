@@ -6,6 +6,7 @@ get_header();
 
 $events = new Query('events');
 $event = new CMB2Fields(get_the_ID());
+$event_page_id = get_template_page_id('archive-events.php');
 $query_args = [
   'posts_per_page' => -1
 ];
@@ -13,7 +14,7 @@ $results = $events->query($query_args);
 ?>
 
 <div class="container">
-  <h1 class="content-title content-title--light-red"><?php the_title(); ?></h1>
+  <h1 class="content-title content-title--light-red"><?php echo get_the_title($event_page_id); ?></h1>
   <ul class="grid">
 
     <?php

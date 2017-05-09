@@ -65,4 +65,15 @@ class WPTheme extends WPBrunch {
     }
   }
 }
+
+function get_template_page_id($template) {
+ global $wpdb;
+
+ $sql = 'SELECT post_id FROM ' . $wpdb->postmeta . '
+   WHERE meta_key = "_wp_page_template"
+   AND meta_value = "' . $template . '"';
+
+ return $wpdb->get_var($sql);
+}
+
 WPTheme::init();
