@@ -30,7 +30,7 @@ echo $image;
 </section>
 
 <section class="container">
-  <h2 class="content-title">Our Team</h2>
+  <h2 class="heading--one heading--bold content-title content-title--light-red">Our Team</h2>
   <section class="team">
     <div class="team-block">
       <div class="team-block__image">

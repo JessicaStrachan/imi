@@ -13,7 +13,7 @@ $results = $events->query($query_args);
 ?>
 
 <div class="container">
-  <h1 class="content-title content-title--light-red"><?php the_title(); ?></h1>
+  <h1 class="heading--one heading--bold content-title content-title--light-red"><?php the_title(); ?></h1>
   <ul class="grid">
 
     <?php

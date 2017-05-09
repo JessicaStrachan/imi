@@ -13,6 +13,8 @@
   &__content {
     @include font-size(1.6);
     color: $internal-paragraph-color;
+    margin: 0 auto;
+    max-width: 1000px;
     padding: 0 40px;
   }
 }

@@ -12,7 +12,7 @@ endforeach;
 get_header();
 ?>
 
-<h2 class="content-title"><?php the_title(); ?></h2>
+<h2 class="heading--one heading--bold content-title content-title--light-red"><?php the_title(); ?></h2>
 
 <section class="blog">
 

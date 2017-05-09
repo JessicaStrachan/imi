@@ -6,10 +6,10 @@ $query_args = [
   'posts_per_page' => -1
 ];
 $results = $events->query($query_args);
-?>  
+?>
 
 <div class="container">
-  <h1 class="content-title content-title--light-red">Events</h1>
+  <h1 class="heading--one heading--bold content-title content-title--light-red">Events</h1>
   <ul class="grid">
 
     <?php
@@ -38,4 +38,3 @@ $results = $events->query($query_args);
 
   </ul>
 </div>
-
