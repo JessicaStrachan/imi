@@ -109,16 +109,29 @@
     display: block;
   }
 
+  .menu-open {
+    position: fixed;
+  }
+
   .navigation {
     background-color: $header-background;
     flex-direction: column;
     height: auto;
+    opacity: 0;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     right: 0;
-    top: 100px;
+    top: -132px;
+    transition: opacity .3s, transform .4s ease-in-out;
+    transform: translateY(-100%);
     width: 260px;
     z-index: 2;
+
+    &.active {
+      opacity: 1;
+      top: 0;
+      transform: translateY(100px);
+    }
 
     &__item {
       padding-bottom: 10px;
