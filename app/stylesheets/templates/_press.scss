@@ -24,10 +24,10 @@
     }
 
   &__logo {
-    height: 100px;
+    height: 160px;
     position: relative;
     transition: opacity .3s ease;
-    width: 100%;
+    width: 160px;
 
     img {
       display: block;
@@ -50,22 +50,24 @@
     @include font-size(1.6);
     color: $press-page-link-color;
   }
-
 }
 
 @media only screen and (max-width: 500px) {
-  .press {
+  .press__item {
+    max-width: 50%;
 
-    &__item {
-      max-width: 50%;
-
-      &:nth-child(odd) {
-        margin-right: 10px
-      }
-
-      &:not(:last-child) {
-        margin: 0;
-      }
+    &:nth-child(odd) {
+      margin-right: 10px
     }
+
+    &:not(:last-child) {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .press__item {
+    width: 100%
   }
 }
