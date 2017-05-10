@@ -34,6 +34,7 @@
           color: $footer-links;
 
           a {
+            font-weight: 700;
             text-decoration: none;
             transition: opacity .3s ease;
 
@@ -54,6 +55,7 @@
       &-tel {
         @include font-size(1.8);
         color: $footer-links;
+        font-weight: 700;
         text-decoration: none;
         transition: opacity .6s ease;
 
@@ -86,7 +88,7 @@
       }
 
       i {
-        @include font-size(1.8);
+        @include font-size(2.5);
         color: $footer-links;
       }
     }
@@ -94,13 +96,19 @@
 
   &__bottom {
     @include font-size(1.2);
+    border-top: 1px solid $footer-legal-color;
     color: $footer-legal-color;
-    padding: 40px;
+    margin: 0 40px;
+    padding: 40px 0;
     text-align: center;
   }
 }
 
 .subscribe {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
   &__input,
   &__submit {
     @include font-size(1.6);
@@ -108,10 +116,11 @@
   }
 
   &__input {
+    color: $footer-legal-color;
     background-color: $footer-background;
     border: 1px solid $footer-section-border;
     padding: 15px;
-    max-width: 350px;
+    width: 75%;
   }
 
   &__submit {
@@ -126,6 +135,16 @@
       opacity: .6;
     }
   }
+
+  input[type="email"].subscribe__input::placeholder {
+    color: $footer-legal-color;
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+  .footer__top--contact-requests {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -137,19 +156,14 @@
       text-align: center;
       width: 100%;
 
-      * {
-        width: 100%;
-      }
-
       .subscribe {
         max-width: 440px;
         margin: 0 auto;
-
-        &__input,
-        &__submit {
-          width: auto;
-        }
       }
+    }
+
+    &--contact * {
+      width: 100%;
     }
 
     &--support {
@@ -164,9 +178,16 @@
 }
 
 @media only screen and (max-width: 414px) {
-  .subscribe__submit {
-    margin: 10px 0 0;
-    padding: 15px 61px;
+  .subscribe {
+    flex-direction: column;
+    &__input {
+      width: 100%;
+    }
+
+    &__submit {
+      margin: 10px 0 0;
+      padding: 15px 61px;
+    }
   }
 }
 

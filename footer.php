@@ -1,7 +1,7 @@
       <section class="footer">
         <div class="footer__top">
           <div class="footer__top--contact">
-            <h2>Contact Us</h2>
+            <h2 class="heading--two heading--bold">Contact Us</h2>
             <ul class="footer__top--contact-requests">
               <li class="footer__top--contact-requests-link"><a href="#">Consultancy Requests</a></li>
               <li class="footer__top--contact-requests-link"><a href="#">Media Requests</a></li>
@@ -16,12 +16,12 @@
             </div>
           </div>
           <div class="footer__top--support">
-            <h2>Support Us</h2>
-            <h4>Please join our mailing list. All information is kept confidential and your identity is not shared with anyone else.</h4>
+            <h2 class="heading--two heading--bold">Support Us</h2>
+            <h4 class="heading--bold">Please join our mailing list. All information is kept confidential and your identity is not shared with anyone else.</h4>
             <form class="subscribe">
               <input type ="email" name="email" placeholder="enter email address" class="subscribe__input"/>
               <button type="submit" class="subscribe__submit">Subscribe</button>
-            </form> 
+            </form>
           </div>
         </div>
         <div class="footer__bottom">
