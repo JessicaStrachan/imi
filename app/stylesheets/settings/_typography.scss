@@ -25,3 +25,15 @@
 .heading--bold {
   font-weight: 700
 }
+
+@media screen and(max-width: 768px) {
+  .heading--one {
+    @include font-size(3);
+  }
+}
+
+@media screen and(max-width: 414px) {
+  .heading--one {
+    @include font-size(2);
+  }
+}
