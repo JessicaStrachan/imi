@@ -5,7 +5,7 @@ module.exports = {
   files: {
     javascripts: {
       joinTo: {
-        'js/vendor.js': /^(?!app)/,
+        'js/vendor.js': /^(vendor\/javascripts)/,
         'js/app.js': /^(app\/javascripts)/
       }
     },

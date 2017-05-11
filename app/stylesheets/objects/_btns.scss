@@ -25,6 +25,7 @@
 .lime__btn {
   background-color: $lime-btn-background;
   color: $lime-btn-text-color;
+  cursor: pointer;
   transition: background-color .3s ease;
 
   &:hover {
@@ -36,5 +37,11 @@
 @media screen and(max-width: 767px) {
   .btn {
     padding: 14px;
+  }
+}
+
+@media screen and(max-width: 414px) {
+  .btn {
+    @include font-size(1.2);
   }
 }
