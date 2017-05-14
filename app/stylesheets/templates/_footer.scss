@@ -164,6 +164,10 @@
 
     &--contact * {
       width: 100%;
+
+      .paypal-link img {
+        width: auto;
+      }
     }
 
     &--support {
