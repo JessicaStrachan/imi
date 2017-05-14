@@ -13,6 +13,7 @@
               <a class="footer__top--social-link" href="#"><i class="fa fa-facebook"></i></a>
               <a class="footer__top--social-link" href="#"><i class="fa fa-twitter"></i></a>
               <a class="footer__top--social-link" href="#"><i class="fa fa-skype"></i></a>
+              <a class="footer__top--social-link paypal-link" href="https://www.paypal.com/gb/home" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/public/images/paypal-donate.jpg"></a>
             </div>
           </div>
           <div class="footer__top--support">
