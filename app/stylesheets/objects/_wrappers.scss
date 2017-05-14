@@ -1,18 +1,12 @@
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 40px;
+  padding: 40px;
   position: relative;
 }
 
 @media only screen and (max-width: 1200px) {
   .container {
-    padding: 0 20px;
-  }
-}
-
-@media only screen and (max-width: 1070px) {
-  .grid {
-    flex-wrap: wrap;
+    padding: 20px;
   }
 }
