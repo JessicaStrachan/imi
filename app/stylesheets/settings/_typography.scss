@@ -1,8 +1,25 @@
 .content-title {
+  margin: 40px 0;
+  position: relative;
   text-align: center;
+
+  &::after {
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 300px;
+
+  }
 
   &--light-red {
     color: $home-section-title;
+
+    &::after {
+      background-color: $home-section-title;
+    }
   }
 }
 
