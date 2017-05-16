@@ -2,18 +2,31 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
 }
 
 .team-block {
   display: flex;
   flex-direction: row;
-  height: 270px;
-  margin-bottom:  30px;
-  max-width: 550px;
+  margin-bottom: 20px;
+  width: 48%;
 
   &__image {
     background-color: $_color-peach;
-    height: 270px;
+    height: 360px;
+    max-width: 360px;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+
+    img {
+      height: auto;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
   }
 
   &__info {
@@ -42,6 +55,16 @@
 
     &:hover {
       opacity: .6;
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .team-block {
+    width: 100%;
+
+    &__image {
+
     }
   }
 }

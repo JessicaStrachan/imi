@@ -21,11 +21,11 @@ echo $image;
 <section class="two-block">
   <div class="two-block__section two-block__section--padding-right">
     <h3 class="two-block__title">Our Vision</h3>
-    <p class="two-block__text"><?php echo $about_us->format_content($about_us->field('our_vision_text')); ?></p>
+    <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?>
   </div>
   <div class="two-block__section two-block__section--padding-left">
     <h3 class="two-block__title">Branches</h3>
-  <p class="two-block__text"><?php echo $about_us->format_content($about_us->field('our_branches_text')); ?></p>
+  <?php echo $about_us->format_content($about_us->field('our_branches_text')); ?>
   </div>
 </section>
 

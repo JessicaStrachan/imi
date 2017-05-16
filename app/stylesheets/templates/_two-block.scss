@@ -2,30 +2,31 @@
   background-color: $visions-branch-background-color;
   display: flex;
   flex-direction: row;
-  padding: 40px 130px;
+  padding: 40px;
 
   &__section {
     color: $vision_branch-text-color;
-    text-align: center;
     width: 50%;
 
     &--padding-right {
       border-right: 1px solid $vision_branch-text-color;
-      padding-right: 65px
+      padding-right: 40px
     }
 
     &--padding-left {
-      padding-left: 65px
+      padding-left: 40px
     }
   }
 
   &__title {
     @include font-size(2.5);
+    text-align: center;
+    padding-bottom: 10px;
   }
 
-  &__text {
-    @include font-size(2.5);
-    }
+  p {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -34,6 +35,19 @@
 
     &__section {
       width: 100%;
+
+      &:not(:last-child) {
+        padding: 0 0 20px 0;
+      }
+
+      &--padding-right {
+        border: none;
+        padding-right: none;
+      }
+
+      &--padding-left {
+        padding-left: 0;
+      }
     }
   }
 }
