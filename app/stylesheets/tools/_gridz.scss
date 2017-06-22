@@ -32,3 +32,9 @@ $num-grid-col: 12;
     @extend %col-push-#{$i};
   }
 }
+
+@media screen and(max-width: 767px) {
+  .grid {
+
+  }
+}

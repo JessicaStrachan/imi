@@ -5,7 +5,7 @@ get_header();
 
 <article class="container">
   <section class="">
-    <h1 class="heading--one heading--bold content-title content-title--light-red">404</h1>
+    <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center">404</h1>
   </section>
   <section class="404-message">
     <p class="404-message__text">The page you are looking for could not be found.<br>

@@ -17,7 +17,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 </section>
 
 <section class="container">
-	<h2 class="heading--one heading--bold content-title content-title--light-red">Contact Us</h2>
+	<h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Contact Us</h2>
 	<div class="address">
 		<p>26 The Glade</p>
 		<p>Mytchett</p>

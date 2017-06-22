@@ -30,11 +30,11 @@ echo $image;
 </section>
 
 <section class="container">
-  <h2 class="heading--one heading--bold content-title content-title--light-red">Our Team</h2>
+  <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Our Team</h2>
   <section class="team">
     <div class="team-block">
       <div class="team-block__image">
-        <img src="http://placehold.it/270x270">
+        <img src="https://unsplash.it/200/300/?random">
       </div>
       <div class="team-block__info">
         <h4 class="team-block__name"><?php echo $about_us->format_content($about_us->field('team_member_name')); ?></h4>
@@ -49,7 +49,7 @@ echo $image;
     </div>
     <div class="team-block">
       <div class="team-block__image">
-        <img src="http://placehold.it/270x270">
+        <img src="https://unsplash.it/200/300/?random">
       </div>
       <div class="team-block__info">
         <h4 class="team-block__name"><?php echo $about_us->format_content($about_us->field('team_member_name')); ?></h4>
@@ -64,7 +64,7 @@ echo $image;
     </div>
     <div class="team-block">
       <div class="team-block__image">
-        <img src="http://placehold.it/270x270">
+        <img src="https://unsplash.it/200/300/?random">
       </div>
       <div class="team-block__info">
         <h4 class="team-block__name"><?php echo $about_us->format_content($about_us->field('team_member_name')); ?></h4>
@@ -79,7 +79,7 @@ echo $image;
     </div>
     <div class="team-block">
       <div class="team-block__image">
-        <img src="http://placehold.it/270x270">
+        <img src="https://unsplash.it/200/300/?random">
       </div>
       <div class="team-block__info">
         <h4 class="team-block__name"><?php echo $about_us->format_content($about_us->field('team_member_name')); ?></h4>
