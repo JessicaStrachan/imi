@@ -9,11 +9,12 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  height: 240px;
   width: 48%;
 
   &__image {
     background-color: $_color-peach;
-    height: 360px;
+    height: 100%;
     max-width: 360px;
     overflow: hidden;
     position: relative;

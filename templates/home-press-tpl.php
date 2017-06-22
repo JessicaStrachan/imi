@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="heading--one heading--bold content-title content-title--light-red">Article Section title</h2>
+  <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Article Section title</h2>
     <section class="press__container">
       <a href="#" class="press__block">
           <div class="press__block--image"></div>

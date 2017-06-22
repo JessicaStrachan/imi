@@ -14,7 +14,7 @@ $results = $events->query($query_args);
 ?>
 
 <div class="container">
-  <h1 class="content-title content-title--light-red"><?php echo get_the_title($event_page_id); ?></h1>
+  <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center"><?php echo get_the_title($event_page_id); ?></h1>
 
   <ul class="grid">
 
