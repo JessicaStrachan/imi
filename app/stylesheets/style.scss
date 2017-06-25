@@ -3,7 +3,8 @@
 
 @import 'settings/variables',
         'settings/reset.scss',
-        'settings/typography.scss';
+        'settings/typography.scss',
+        'settings/grid-overrides';
 
 @import 'elements/base';
 
@@ -24,4 +25,5 @@
         'templates/contact',
         'templates/central-paragraph',
         'templates/carousel',
-        'templates/404-message';
+        'templates/404-message',
+        'templates/article-page'
