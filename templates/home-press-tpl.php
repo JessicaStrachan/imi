@@ -2,7 +2,9 @@
   <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Article Section title</h2>
     <section class="press__container">
       <a href="#" class="press__block">
-          <div class="press__block--image"></div>
+          <div class="press__block--image">
+            <img src="../app/assets/images/"
+          </div>
       </a>
       <a href="#" class="press__block">
           <div class="press__block--image"></div>

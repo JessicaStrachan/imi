@@ -29,7 +29,6 @@ $events_address->add_field([
   'type' => 'text'
 ]);
 
-
 $events_excerpt = new_cmb2_box([
   'id' => 'event_excerpt',
   'title' => __('Event Exceprt', 'imi'),

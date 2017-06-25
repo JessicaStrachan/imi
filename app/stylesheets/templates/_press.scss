@@ -5,15 +5,15 @@
   justify-content: space-between;
   padding: 40px;
 
-  .press__item {
-    margin-right: 20px;
+  &__item {
     max-width: 25%;
 
-    &:last-child {
-      margin-left: 0;
+    &:not(:last-child) {
+      margin-right: 10px;
     }
+  }
 
-    &--link {
+  &__link {
       text-decoration: none;
 
       &:hover {
@@ -23,31 +23,51 @@
       }
     }
 
-    &--image {
-      background-color: $press-page-image-background;
-      height: 100px;
-      transition: opacity .3s ease;
+  &__logo {
+    height: 160px;
+    position: relative;
+    transition: opacity .3s ease;
+    width: 160px;
+
+    img {
+      display: block;
+      height: auto;
+      left: 50%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
       width: 100%;
     }
+  }
 
-    &--title {
-      @include font-size(2);
-      color: $press-page-link-color;
+  &__title {
+    @include font-size(2);
+    color: $press-page-link-color;
+  }
+
+  &__date {
+    @include font-size(1.6);
+    color: $press-page-link-color;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .press__item {
+    max-width: 50%;
+
+    &:nth-child(odd) {
+      margin-right: 10px
     }
 
-    &--date {
-      @include font-size(1.6);
-      color: $press-page-link-color;
+    &:not(:last-child) {
+      margin: 0;
     }
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .press {
-    flex-direction: column;
-
-    .press__item {
-      max-width: 100%;
-    }
+  .press__item {
+    width: 100%
   }
 }
