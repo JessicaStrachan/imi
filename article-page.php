@@ -14,7 +14,7 @@ get_header();
 
 <section>
   <div class="container">
-    <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center">Press</h1>
+    <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center">Press Articles</h1>
   </div>
 </section>
 
