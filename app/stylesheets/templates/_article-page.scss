@@ -2,7 +2,9 @@
 	text-decoration: none;
 
   &:nth-child(4n + 4) {
-  	margin-right: 0;
+    .article-logo__image {
+      margin-right: 0;
+    }
   }
 
   &__image {
@@ -23,9 +25,15 @@
   	margin-right: 20px;
   }
 
-  &:hover {
-  	text-decoration: underline;
+  &__title {
+    @include font-size(1.8);
+    color: $_color-ruby;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
 
+  &:hover {
   	.article-logo__image {
   		opacity: .6;
   	}
