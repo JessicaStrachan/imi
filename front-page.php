@@ -88,6 +88,11 @@ get_header();
     <?php get_template_part('templates/home-press', 'tpl'); ?>
   </div>
 
+  <div class="row">
+    <?php get_template_part('templates/home-blog', 'tpl'); ?>
+  </div>
+
+
 </div>
 
 <?php
