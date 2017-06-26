@@ -30,45 +30,51 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 		</div>
 	</div>
 	<div class="form-tabs">
-		<button class="form-tabs__button btn btn--secondary">Contact</button>
-		<button class="form-tabs__button btn btn--secondary">Media Requests</button>
-		<button class="form-tabs__button btn btn--secondary">Research Requests</button>
+		<button class="form-tabs__button btn--tabs btn btn--secondary js-tab">Contact</button>
+		<button class="form-tabs__button btn--tabs btn btn--secondary js-tab">Media Requests</button>
+		<button class="form-tabs__button btn--tabs btn btn--secondary js-tab">Research Requests</button>
 	</div>
 	<div class="central-paragraph">
 		<p>Lorem ipsum dolor sit amet, mea id epicuri patrioque hendrerit, id quot perpetua iracundia vix, an suavitate reprimique pri. Id dico discere disputando pro. Sumo sonet eu pri. Ne sit omnes mnesarchum, vix munere impetus molestie ut. Vidisse eruditi quaerendum pri at, soleat aperiri omnesque mel no.</p>
 	</div>
-	<form class="form grid">
-		<input class="form__input col-6" type="text" name="name" placeholder="name">
-		<input class="form__input form__input--no-right-space col-6" type="text" name="surname" placeholder="surname">
-		<input class="form__input col-6" type="text" name="email" placeholder="email">
-		<input class="form__input form__input--no-right-space col-6" type="text" name="number" placeholder="contact number">
-		<textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="summary of research proposal (no more than 500 words please)"></textarea>
-		<textarea class="form__input col-6" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="summary of duration, methodology, and type of access requested"></textarea>
-		<textarea class="form__input form__input--no-right-space col-6" type="textarea" name="summary-others" maxlength="3000" rows="8" placeholder="What other sites, groups or organisations have been approached for this research?"></textarea>
-		<input class="form__input col-6" type="text" name="institution" placeholder="institution/affiliation">
-		<input class="form__input form__input--no-right-space col-6" type="text" name="supervisors" placeholder="man supervisors (if appropriate)">
-		<textarea class="form__input col-6" type="textarea" name="outputs" maxlength="3000" rows="8" placeholder="Potential/predicted outputs (if appropriate)"></textarea>
-		<textarea class="form__input form__input--no-right-space col-6" type="textarea" name="interest" maxlength="3000" rows="8" placeholder="Researchers interest in IMI"></textarea>
-		<input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
-	</form>
-  <form class="form grid">
-    <input class="form__input col-6" type="text" name="name" placeholder="name">
-		<input class="form__input form__input--no-right-space col-6" type="text" name="surname" placeholder="surname">
-    <input class="form__input col-6" type="text" name="email" placeholder="email">
-		<input class="form__input form__input--no-right-space col-6" type="text" name="number" placeholder="contact number">
-    <textarea class="form__input form__input--full-width form__input--no-right-space col-12" maxlength="3000" rows="15" type="textarea" placeholder="Your Message"></textarea>
-    <input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
-  </form>
-  <form class="form grid">
-    <input class="form__input col-6" type="text" name="name" placeholder="name">
-		<input class="form__input form__input--no-right-space col-6" type="text" name="surname" placeholder="surname">
-		<input class="form__input col-6" type="text" name="email" placeholder="email">
-		<input class="form__input form__input--no-right-space col-6" type="text" name="number" placeholder="contact number">
-    <textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="Why do you want to write an article/make a programme on Muslims? Do you have any specific angle/points you want to make and why?"></textarea>
-    <textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="How can such coverage benefit Inclusive Mosque Initiative and our stakeholders?"></textarea>
-    <textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="Which other organisations or people have you approached in relation to this interview/programme/research and why?"></textarea>
-    <input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
-  </form>
+	<div class="grid js-form">
+		<form class="form ">
+			<input class="form__input col-6" type="text" name="name" placeholder="name">
+			<input class="form__input form__input--no-right-space col-6" type="text" name="surname" placeholder="surname">
+			<input class="form__input col-6" type="text" name="email" placeholder="email">
+			<input class="form__input form__input--no-right-space col-6" type="text" name="number" placeholder="contact number">
+			<textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="summary of research proposal (no more than 500 words please)"></textarea>
+			<textarea class="form__input col-6" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="summary of duration, methodology, and type of access requested"></textarea>
+			<textarea class="form__input form__input--no-right-space col-6" type="textarea" name="summary-others" maxlength="3000" rows="8" placeholder="What other sites, groups or organisations have been approached for this research?"></textarea>
+			<input class="form__input col-6" type="text" name="institution" placeholder="institution/affiliation">
+			<input class="form__input form__input--no-right-space col-6" type="text" name="supervisors" placeholder="man supervisors (if appropriate)">
+			<textarea class="form__input col-6" type="textarea" name="outputs" maxlength="3000" rows="8" placeholder="Potential/predicted outputs (if appropriate)"></textarea>
+			<textarea class="form__input form__input--no-right-space col-6" type="textarea" name="interest" maxlength="3000" rows="8" placeholder="Researchers interest in IMI"></textarea>
+			<input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
+		</form>
+	</div>
+	<div class="grid js-form">
+        <form class="form grid">
+            <input class="form__input col-6" type="text" name="name" placeholder="name">
+            <input class="form__input form__input--no-right-space col-6" type="text" name="surname" placeholder="surname">
+            <input class="form__input col-6" type="text" name="email" placeholder="email">
+            <input class="form__input form__input--no-right-space col-6" type="text" name="number" placeholder="contact number">
+            <textarea class="form__input form__input--full-width form__input--no-right-space col-12" maxlength="3000" rows="15" type="textarea" placeholder="Your Message"></textarea>
+            <input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
+        </form>
+  	</div>
+  	<div class="grid js-form">
+        <form class="form grid">
+            <input class="form__input col-6" type="text" name="name" placeholder="name">
+            <input class="form__input form__input--no-right-space col-6" type="text" name="surname" placeholder="surname">
+            <input class="form__input col-6" type="text" name="email" placeholder="email">
+            <input class="form__input form__input--no-right-space col-6" type="text" name="number" placeholder="contact number">
+            <textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="Why do you want to write an article/make a programme on Muslims? Do you have any specific angle/points you want to make and why?"></textarea>
+            <textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="How can such coverage benefit Inclusive Mosque Initiative and our stakeholders?"></textarea>
+            <textarea class="form__input form__input--full-width form__input--no-right-space col-12" type="textarea" name="summary-proposal" maxlength="3000" rows="8" placeholder="Which other organisations or people have you approached in relation to this interview/programme/research and why?"></textarea>
+            <input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
+        </form>
+  	</div>
 </section>
 
 <?php
