@@ -1,7 +1,7 @@
 .btn {
   @include font-size(1.8);
-  height: 50px;
-  padding: 14px 48px;
+  padding: 15px 40px;
+  position: absolute;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -20,13 +20,18 @@
   &--submit {
     -webkit-appearance: none;
   }
+
+  &--center {
+    left: 50%;
+    transform: translateX(-50%)
+  }
 }
 
 .lime__btn {
   background-color: $lime-btn-background;
   color: $lime-btn-text-color;
   cursor: pointer;
-  transition: background-color .3s ease;
+  transition: background-color .3s ease, color .3s ease;
 
   &:hover {
     background-color: $lime-btn-background-hover;

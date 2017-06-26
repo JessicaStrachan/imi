@@ -10,7 +10,7 @@ $results = $events->query($query_args);
 
 <div class="container">
   <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center">Upcoming Events</h1>
-  <ul class="grid">
+  <ul class="grid grid--space-bottom">
 
     <?php
     if($results->have_posts()): while($results->have_posts()): $results->the_post();
@@ -37,4 +37,7 @@ $results = $events->query($query_args);
     <?php endwhile; endif; ?>
 
   </ul>
+
+  <a class="btn btn--center lime__btn" href="/events">View All Events</a>
+
 </div>

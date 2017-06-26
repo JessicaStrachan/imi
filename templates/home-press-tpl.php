@@ -1,4 +1,4 @@
-<div class="container container--border">
+<div class="container container--border-top">
   <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Press Articles</h2>
     <div class="grid grid--space-bottom">
       <div class="col-3">
@@ -34,5 +34,5 @@
         </a>
       </div>
     </div>
-    <a class="press__btn btn lime__btn" href="/articles">View Articles</a>
+    <a class="btn btn--center lime__btn" href="/press">View Articles</a>
 </div>
