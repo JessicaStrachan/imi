@@ -29,22 +29,41 @@
 }
 
 .form {
+	display: none;
 	flex-wrap: wrap;
 	margin-bottom: 40px;
 	max-width: 1120px;
 
+	&--active{
+		display: block;
+	}
+
+	&__row {
+		display: flex;
+		width: 100%;
+
+		.col-6:first-child {
+			margin-right: 10px;
+		}
+	}
+
+	&__label {
+		@include font-size(1.4);
+		color: $_color-teal;
+		display: block;
+		font-family: 'Reem Kufi', sans-serif;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+
 	&__input {
 		@include font-size(1.6);
-		background-color: $contact-input-background;
-		border: none;
+		background-color: $color-sandy-beach;
+		border: 1px solid $color-sandy-beach;
 		color: $contact-input-color;
 		margin: 0 15px 15px 0;
 		padding: 20px 15px;
-		width: 49%;
-
-		&--full-width {
-			width: 100%;
-		}
+		width: 100%;
 
 		&--no-right-space {
 			margin-right: 0;
@@ -87,6 +106,16 @@
 
 		&__button:not(:last-child) {
 			margin-bottom: 10px;
+		}
+	}
+}
+
+@media screen and(max-width: 414px) {
+	.form__row {
+		flex-direction: column;
+
+		.col-6 {
+			width: 100%;
 		}
 	}
 }

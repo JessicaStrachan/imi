@@ -25,7 +25,20 @@
     left: 50%;
     transform: translateX(-50%)
   }
+
+  &--tabs {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 }
+
+.tab-active {
+  background-color: pink;
+}
+
 
 .lime__btn {
   background-color: $lime-btn-background;
