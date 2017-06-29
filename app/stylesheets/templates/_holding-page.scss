@@ -1,0 +1,49 @@
+.page-template-holding-page {
+	background-color: $_color-teal;
+	height: 100vh;
+	position: relative;
+	width: 100vw;
+
+	.header,
+	.footer {
+		display: none;
+	}
+
+	.holding-page {
+		&__content {
+			left: 50%;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&__heading,
+		&__sub,
+		&__para {
+			color: $_color-white;
+		}
+
+		&__heading {
+			@include font-size(6.0);
+		}
+
+		&__sub {
+			@include font-size(2.5);
+		}
+
+		&__para {
+			@include font-size(1.5);
+		}
+
+		&__link {
+			color: $_color-lime-green;
+			text-decoration: none;
+			transition: color .3s ease;
+
+			&:hover {
+				color: $_color-forest-green;
+			}
+		}
+	}
+}
