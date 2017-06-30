@@ -36,11 +36,25 @@
     padding: 20px;
   }
 
+  &__excerpt {
+    @include font-size(1.6)
+    color: $blog-listing-block-text-color;
+  }
+
   &__read-more {
     @include font-size(1.8);
     color: $blog-listing-read-more-color;
     font-weight: 700;
     text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .card {
+
+    &:nth-child(3n+3) {
+      margin-right: 20px;
+    }
   }
 }
 

@@ -12,46 +12,49 @@ endforeach;
 get_header();
 ?>
 
-<h2 class="heading--one heading--bold heading--primary heading--asset u-align-center"><?php the_title(); ?></h2>
+<div class="container">
 
-<section class="blog">
+  <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center"><?php the_title(); ?></h2>
 
-  <?php
-  // the query
-  $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
+  <section class="blog">
 
-  <?php if ( $wpb_all_query->have_posts() ) : ?>
+    <?php
+    // the query
+    $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-0)); ?>
 
-  <ul class="blog__container grid">
+    <?php if ( $wpb_all_query->have_posts() ) : ?>
 
-  	<!-- the loop -->
-  	<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-  		<li class="block grid__col">
-        <a class="block__link" href="<?php the_permalink(); ?>">
+    <ul class="grid grid--space-bottom grid--flex-start">
 
-          <?php $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
+    	<!-- the loop -->
+    	<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+    		<li class="card grid__col col-4">
+          <a class="card__link" href="<?php the_permalink(); ?>">
 
-          <div class="block__img" style="background-image: url('<?php echo $post_image[0]; ?>')"></div>
-          <div class="block__info">
-            <h3 class="block__info--title"><?php the_title(); ?></h3>
-            <p class="block__info--excerpt"><?php the_excerpt(); ?></p>
-            <p class="block__info--read-more">Read More</p>
-          </div>
+            <?php $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
 
-        </a>
-      </li>
-  	<?php endwhile; ?>
-  	<!-- end of the loop -->
+            <div class="card__media" style="background-image: url('<?php echo $post_image[0]; ?>')"></div>
+            <div class="card__info">
+              <h2 class="heading--two heading--bold"><?php the_title(); ?></h2>
+              <p class="card__excerpt"><?php the_excerpt(); ?></p>
+              <p class="card__read-more">Read More</p>
+            </div>
 
-  </ul>
+          </a>
+        </li>
+    	<?php endwhile; ?>
+    	<!-- end of the loop -->
 
-  	<?php wp_reset_postdata(); ?>
+    </ul>
 
-  <?php else : ?>
-  	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-  <?php endif; ?>
+    	<?php wp_reset_postdata(); ?>
 
-</section>
+    <?php else : ?>
+    	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+
+  </section>
+</div>
 
 <?php
 get_footer();
