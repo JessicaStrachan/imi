@@ -19,14 +19,8 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 <section class="container">
 	<h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Contact Us</h2>
 	<div class="address">
-		<p>26 The Glade</p>
-		<p>Mytchett</p>
-		<p>Camberley</p>
-		<p>Surrey</p>
-		<p>GU16 6BG</p>
 		<div class="address__links">
-			<a class="address__link" href="tel:+447713434157">07713434157</a>
-			<a class="address__link" href="mailto:hello@jessmadeline.com">hello@jessmadeline.com</a>
+			<a class="address__link" href="mailto:admin@inclusivemosqueinitiative.org">admin@inclusivemosqueinitiative.org</a>
 		</div>
 	</div>
 	<div class="form-tabs">

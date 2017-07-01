@@ -70,6 +70,23 @@ ul {
   padding: 0;
 }
 
+.404-message {
+  color: #333;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding:40px;
+  text-align: center;
+}
+
+p.404-message__text {
+  font-size: 18px;
+}
+
+.404-message__button {
+  position: relative;
+  
+}
+
 .u-align-center {
   text-align: center;
 }
