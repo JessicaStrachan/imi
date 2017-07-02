@@ -30,7 +30,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
       </h5>
     </div>
   </section>
-  <section class="post__content">
+  <section class="post__content wysiwyg">
     <?php the_content(); ?>
   </section>
 </div>

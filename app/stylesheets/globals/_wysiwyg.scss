@@ -1,0 +1,28 @@
+.wysiwyg {
+	a {
+		color: $_color-ruby;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	ul li {
+		color: $_color-ruby;
+		padding-left: 10px;
+		position: relative;
+
+		&::before {
+			content: '';
+			background-color: $_color-ruby;
+			border-radius: 50%;
+			height: 5px;
+			left: 0;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 5px;
+		}
+	}
+}
