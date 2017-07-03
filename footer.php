@@ -21,7 +21,7 @@
               <input type ="email" name="email" placeholder="enter email address" class="subscribe__input"/>
               <button type="submit" class="subscribe__submit">Subscribe</button>
             </form> -->
-            <?php echo do_shortcode("[mc4wp_form id="6617"]"); ?>
+            <?php echo do_shortcode( ' [ mc4wp_form id='6617' ] ' ); ?>
           </div>
         </div>
         <div class="footer__bottom">
