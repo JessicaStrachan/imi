@@ -17,11 +17,7 @@
           <div class="footer__top--support">
             <h2 class="heading--two heading--bold">Support Us</h2>
             <h4 class="heading--bold">Please join our mailing list. All information is kept confidential and your identity is not shared with anyone else.</h4>
-            <!-- <form class="subscribe">
-              <input type ="email" name="email" placeholder="enter email address" class="subscribe__input"/>
-              <button type="submit" class="subscribe__submit">Subscribe</button>
-            </form> -->
-            <?php echo do_shortcode( ' [ mc4wp_form id='6617' ] ' ); ?>
+            <?php echo do_shortcode("[mc4wp_form id='21']"); ?>
           </div>
         </div>
         <div class="footer__bottom">
@@ -37,3 +33,5 @@
 
   </body>
 </html>
+
+
