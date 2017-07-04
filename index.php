@@ -24,7 +24,7 @@ get_header();
 
     <?php if ( $wpb_all_query->have_posts() ) : ?>
 
-    <ul class="grid grid--space-bottom grid--flex-start">
+    <ul class="grid grid--space-bottom grid--flex-wrap">
 
     	<!-- the loop -->
     	<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>

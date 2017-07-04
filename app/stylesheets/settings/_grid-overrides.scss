@@ -3,8 +3,12 @@
 		margin-bottom: 20px;
 	}
 
-	&--flex-start {
+	&--flex-wrap {
 		flex-wrap: wrap;
+	}
+
+	&--flex-start {
+		justify-content: flex-start;
 	}
 }
 

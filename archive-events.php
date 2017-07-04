@@ -16,7 +16,7 @@ $results = $events->query($query_args);
 <div class="container container--header-top">
   <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center"><?php echo get_the_title($event_page_id); ?></h1>
 
-  <ul class="grid grid--flex-start">
+  <ul class="grid grid--flex-wrap">
 
     <?php
     if($results->have_posts()): while($results->have_posts()): $results->the_post();
