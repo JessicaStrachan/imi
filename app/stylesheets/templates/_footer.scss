@@ -166,21 +166,23 @@
       }
     }
 
+    &--contact h2 a {
+      text-decoration: none;
+    }
+
     &--contact * {
       width: 100%;
 
       .paypal-link img {
         width: auto;
       }
+
+
     }
 
     &--support {
       border-left: 0;
       border-top: 1px solid $footer-section-border;
-    }
-
-    &--social-link i {
-      @include font-size(3.8);
     }
   }
 }

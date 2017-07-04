@@ -1,41 +1,43 @@
-.heading--one {
-  @include font-size(5);
-}
-
-.heading--two {
-  @include font-size(3);
-}
-
-.heading--three {
-  @include font-size(1.8);
-}
-
-.heading--four {
-  @include font-size(1.2);
-}
-
-.heading--bold {
-  font-weight: 700
-}
-
-.heading--asset {
-  margin-bottom: 20px;
-  position: relative;
-
-  &::after {
-    content: '';
-    background-color: $_color-light-red;
-    bottom: 0;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 300px;
+.heading {
+  &--one {
+    @include font-size(5);  
   }
-}
 
-.heading--primary {
-  color: $_color-light-red;
+  &--two {
+    @include font-size(1.8);  
+  }
+
+  &--three {
+    @include font-size(1.2);  
+  }
+
+  &--bold {
+    font-weight: 700  
+  }
+
+  &--asset {
+    margin-bottom: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      background-color: $_color-light-red;
+      bottom: 0;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 300px;
+    }    
+  }
+
+  &--primary {
+    color: $_color-light-red;  
+  }
+
+  &__link {
+    text-decoration: none;
+  }
 }
 
 @media screen and(max-width: 768px) {
