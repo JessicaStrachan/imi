@@ -12,7 +12,7 @@ endforeach;
 get_header();
 ?>
 
-<div class="container">
+<div class="container container--header-top">
 
   <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center"><?php the_title(); ?></h2>
 

@@ -1,3 +1,7 @@
+.owl-carousel {
+  margin-top: 140px;
+}
+
 .slide {
   position: relative;
 
@@ -56,6 +60,12 @@
     border: none;
     background-color: rgb(185, 190, 135);
   }
+}
+
+@media only screen and (max-width: 768px) {
+    .owl-carousel {
+        margin-top: 100px;
+    }
 }
 
 @media screen and(max-width: 414px) {

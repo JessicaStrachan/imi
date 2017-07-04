@@ -1,20 +1,30 @@
 .container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 40px;
-  position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px;
+    position: relative;
 
-  &--border-top {
-  	border-top: 1px solid $_color-lime-green;
-  }
+    &--border-top {
+        border-top: 1px solid $_color-lime-green;
+    }
+
+    &--header-top {
+        margin-top: 140px;
+    }
 }
 
 .row {
-	margin: 40px 0;
+    margin: 40px 0;
 }
 
-// @media only screen and (max-width: 1200px) {
-//   .container {
-//     padding: 20px;
-//   }
-// }
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container--header-top {
+        margin-top: 100px;
+    }
+}

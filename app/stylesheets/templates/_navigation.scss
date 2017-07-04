@@ -46,11 +46,13 @@
 }
 
 .menu-icon {
-  @include vertical-center(absolute);
   cursor: pointer;
   display: none;
   height: 40px;
+  position: absolute;
   right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 40px;
   z-index: 3;
 

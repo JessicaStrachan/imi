@@ -2,6 +2,7 @@
   background-color: $header-quote-background-color;
   background-position: center center;
   background-size: cover;
+  margin-top: 140px;
 
   .container {
       max-width: 1200px;
@@ -21,9 +22,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .quote .container {
-    padding: 20px
-  }
+  .quote {
+    margin-top: 100px;
+
+    .container {
+      padding: 20px
+    }
+  } 
 }
 
 @media only screen and (max-width: 375px) {
