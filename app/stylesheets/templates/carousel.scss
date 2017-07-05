@@ -1,5 +1,7 @@
 .owl-carousel {
-  margin-top: 140px;
+  height: calc(100vh - 140px);
+  top: 140px;
+  overflow: hidden;
 }
 
 .slide {

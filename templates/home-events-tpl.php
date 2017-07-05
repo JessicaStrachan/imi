@@ -8,7 +8,7 @@ $query_args = [
 $results = $events->query($query_args);
 ?>
 
-<div class="container">
+<div class="container container--vh-top">
   <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center">Upcoming Events</h1>
   <ul class="grid grid--space-bottom">
 

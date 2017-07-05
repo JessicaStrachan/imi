@@ -1,7 +1,7 @@
 (function($) {
 
  $('.owl-carousel').owlCarousel({
-   autoHeight: true,
+   autoHeight: false,
    autoplay: false,
    autoplayTimeout: 5000,
    dots: true,
