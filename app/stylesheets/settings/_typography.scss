@@ -21,7 +21,7 @@
 
     &::after {
       content: '';
-      background-color: $_color-light-red;
+      background-color: $_color-teal;
       bottom: 0;
       height: 2px;
       left: 50%;
@@ -32,7 +32,7 @@
   }
 
   &--primary {
-    color: $_color-light-red;  
+    color: $_color-teal;
   }
 
   &__link {

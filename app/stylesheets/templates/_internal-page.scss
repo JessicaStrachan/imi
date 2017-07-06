@@ -27,13 +27,12 @@
     }
 
     ul li {
-      color: $_color-ruby;
       padding-left: 10px;
       position: relative;
 
       &::before {
         content: '';
-        background-color: $_color-ruby;
+        background-color: $_color-black;
         border-radius: 50%;
         height: 5px;
         left: 0;
@@ -42,6 +41,15 @@
         transform: translateY(-50%);
         width: 5px;
       }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $_color-ruby;
     }
   }
 }
