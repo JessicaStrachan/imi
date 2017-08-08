@@ -45,10 +45,6 @@ a {
   margin: 0;
 }
 
-p {
-  font-weight: 600;
-}
-
 a {
   color: inherit;
 
@@ -98,6 +94,14 @@ p.404-message__text {
 
 .page-container {
   margin: 0 60px;
+}
+
+.link {
+  color: rgb(145, 30, 55);
+
+  &:hover {
+    opacity: .6;
+  }
 }
 
 @media screen and(max-width: 768px) {

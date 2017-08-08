@@ -32,66 +32,75 @@ echo $image;
 <section class="container">
   <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Our Team</h2>
   <section class="team">
+
     <div class="team-block">
       <div class="team-block__image">
-        <img src="https://unsplash.it/200/300/?random">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/tamsila-tauqir.jpg">
       </div>
       <div class="team-block__info">
-        <h4 class="team-block__name"><?php echo $about_us->format_content($about_us->field('team_member_name')); ?></h4>
+        <h4 class="team-block__name">Tamsila Tauqir MBE | <span>Co-founder & Trustee</span></h4>
         <div class="team-block__bio">
-          <?php echo $about_us->format_content($about_us->field('team_member_bio')); ?>
-        </div>
-        <div class="team-block__social">
-          <a class="facebook" href="<?php echo $about_us->field('twitter_link'); ?>"><i class="fa fa-facebook"></i></a>
-          <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <p>
+Tamsila Tauqir MBE is a freelance consultant on issues of policy and intersectional identities as well as being a technical materials engineer. She has held a number of professional and voluntary roles including at Interfaith Alliance UK, Women Living Under Muslim Laws and at Safra Project. She has been awarded a national honour for her voluntary contribution to Muslim communities and was listed in the Huffington Post’s 2013 top 10 list of Muslim women from around the world. Tamsila Tauqir MBE is a freelance consultant on issues of policy and intersectional identities as well as being a technical materials engineer. She has held a number of professional and voluntary roles including at Interfaith Alliance UK, Women Living Under Muslim Laws and at Safra Project. She has been awarded a national honour for her voluntary contribution to Muslim communities and was listed in the Huffington Post’s 2013 top 10 list of Muslim women from around the world.</p>
         </div>
       </div>
     </div>
+
     <div class="team-block">
       <div class="team-block__image">
-        <img src="https://unsplash.it/200/300/?random">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member.jpg">
       </div>
       <div class="team-block__info">
-        <h4 class="team-block__name"><?php echo $about_us->format_content($about_us->field('team_member_name')); ?></h4>
+        <h4 class="team-block__name">Dervla Shannahan | <span>Co-founder</span></h4>
         <div class="team-block__bio">
-          <?php echo $about_us->format_content($about_us->field('team_member_bio')); ?>
-        </div>
-        <div class="team-block__social">
-          <a class="facebook" href="<?php echo $about_us->field('twitter_link'); ?>"><i class="fa fa-facebook"></i></a>
-          <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <p>
+Dervla Zaynab is an academic who has published on a range of subjects including queer sexualities in Muslim communities, hip-hop in Tunisia, ziyarat practices in Iraq, gendered practices in UK mosques and inclusivity in ritual spaces. She is currently working towards her PhD at Goldsmiths, London. Dervla has been involved in various activist scenes for the last decade, is a practising psychotherapist and full-time parent.</p>
         </div>
       </div>
     </div>
+
     <div class="team-block">
       <div class="team-block__image">
-        <img src="https://unsplash.it/200/300/?random">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-2.jpg">
       </div>
       <div class="team-block__info">
-        <h4 class="team-block__name"><?php echo $about_us->format_content($about_us->field('team_member_name')); ?></h4>
+        <h4 class="team-block__name">Halima Gosai Hussain | <span>Co-founder & Trustee</span></h4>
         <div class="team-block__bio">
-          <?php echo $about_us->format_content($about_us->field('team_member_bio')); ?>
-        </div>
-        <div class="team-block__social">
-          <a class="facebook" href="<?php echo $about_us->field('twitter_link'); ?>"><i class="fa fa-facebook"></i></a>
-          <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <p>
+Halima has worked for Muslim organisations of varying perspectives for over 10 years. After participating in a mixed gender prayer led by a female Imam, Halima experienced a period of considerable introspection and now works towards living an inclusive, Islamic way. She has a degree in Philosophy & Theology from King’s College London and an MA in Middle Eastern Studies from SOAS, where her research focused on alternative interpretative methodologies of the Quran.</p>
         </div>
       </div>
     </div>
+
     <div class="team-block">
       <div class="team-block__image">
-        <img src="https://unsplash.it/200/300/?random">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/wasi-daniju.jpg">
       </div>
       <div class="team-block__info">
-        <h4 class="team-block__name"><?php echo $about_us->format_content($about_us->field('team_member_name')); ?></h4>
+        <h4 class="team-block__name">Wasi Daniju | <span>Board Member</span></h4>
         <div class="team-block__bio">
-          <?php echo $about_us->format_content($about_us->field('team_member_bio')); ?>
-        </div>
-        <div class="team-block__social">
-          <a class="facebook" href="<?php echo $about_us->field('twitter_link'); ?>"><i class="fa fa-facebook"></i></a>
-          <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <p>
+Wasi Daniju is a qualified Person-Centred therapist, and a <a class="link" href="http://wasidaniju.500px.com/">photographer</a>, with a focus on photojournalism and depiction of lesser-represented groups.  She has a keen interest in social and ecological justice, and regularly engages in community organising. </p>
         </div>
       </div>
     </div>
+
+    <div class="team-block">
+      <div class="team-block__image">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/naima-khan.jpg">
+      </div>
+      <div class="team-block__info">
+        <h4 class="team-block__name">Naima Khan | <span>Trustee</span></h4>
+        <div class="team-block__bio">
+          <p>
+Naima Khan works in communications and has seven years’ experience producing content on the arts, religion and the third sector. She has an interest in the ways artists can contribute to our understanding of socio-politics our collective histories and how this can be applied in places of worship. </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
   </section>
 </section>
 
