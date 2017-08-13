@@ -8,7 +8,8 @@
   }
 
   &__image {
-  	height: 75px;
+  	height: 95px;
+    margin-bottom: 20px;
   	overflow: hidden;
   	position: relative;
   	transition: .3s opacity;
@@ -62,4 +63,10 @@
 		}
 	}
 
+}
+
+@media only screen and (max-width: 650px) {
+/*  .grid .col-3 {
+    width: ;
+  }*/
 }

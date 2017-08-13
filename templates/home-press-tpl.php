@@ -2,37 +2,37 @@
   <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Press Articles</h2>
     <div class="grid grid--space-bottom">
       <div class="col-3">
-        <a class="article-logo" href="http://www.bbc.co.uk/news" target="_blank">
-          <div class="article-logo__image">
-            <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/pink-news-logo.png" alt="Pink News Logo" />
-          </div>
-          <h1 class="article-logo__title u-align-center">col 1</h1>
-        </a>
-      </div>
-      <div class="col-3">
-        <a class="article-logo" href="http://www.bbc.co.uk/news" target="_blank">
+        <a class="article-logo" href="https://www.theguardian.com/world/shortcuts/2013/aug/07/mission-to-build-alternative-mosque-muslims" target="_blank">
           <div class="article-logo__image">
             <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/the-guardian-logo.png" />
           </div>
-          <h1 class="article-logo__title u-align-center">col 2</h1>
         </a>
       </div>
+
       <div class="col-3">
-        <a class="article-logo" href="http://www.bbc.co.uk/news" target="_blank">
+        <a class="article-logo" href="https://www.ft.com/content/2ccda9ea-17c7-11e6-bb7d-ee563a5a1cc1" target="_blank">
           <div class="article-logo__image">
-            <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/huffpost-logo-2.png" />
+            <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/ft-logo.png" alt="Financial Times Logo" />
           </div>
-          <h1 class="article-logo__title u-align-center">col 3</h1>
         </a>
       </div>
+
       <div class="col-3">
-        <a class="article-logo" href="http://www.bbc.co.uk/news" target="_blank">
+        <a class="article-logo" href="https://www.youtube.com/watch?v=MBMYmhW8tU8" target="_blank">
           <div class="article-logo__image">
-            <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/bbc-asian-network-logo.svg" />
+            <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/bbc-asian-network-logo.png" />
           </div>
-          <h1 class="article-logo__title u-align-center">col 4</h1>
         </a>
       </div>
+
+      <div class="col-3">
+        <a class="article-logo" href="http://ebook-dl.com/magazine/marie-claire-february-2017-uk991.pdf " target="_blank">
+          <div class="article-logo__image">
+            <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/marie-claire-logo.png" />
+          </div>
+        </a>
+      </div>
+
     </div>
-    <a class="btn btn--center lime__btn" href="/articles">View Articles</a>
+    <a class="btn btn--center lime__btn" href="/articles">View More Articles</a>
 </div>

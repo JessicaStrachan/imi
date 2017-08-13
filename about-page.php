@@ -48,7 +48,7 @@ Tamsila Tauqir MBE is a freelance consultant on issues of policy and intersectio
 
     <div class="team-block">
       <div class="team-block__image">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-2.jpg">
       </div>
       <div class="team-block__info">
         <h4 class="team-block__name">Dervla Shannahan | <span>Co-founder</span></h4>
@@ -61,7 +61,7 @@ Dervla Zaynab is an academic who has published on a range of subjects including 
 
     <div class="team-block">
       <div class="team-block__image">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-2.jpg">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-3.jpg">
       </div>
       <div class="team-block__info">
         <h4 class="team-block__name">Halima Gosai Hussain | <span>Co-founder & Trustee</span></h4>
