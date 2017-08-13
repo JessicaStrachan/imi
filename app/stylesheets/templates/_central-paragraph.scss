@@ -1,5 +1,18 @@
 .central-paragraph {
 	@include font-size(1.6);
-	margin: 40px 0;
+	margin: 0 150px;
+	text-align: center;
+}
+
+@media screen and(max-width: 768px) {
+	.central-paragraph {
+		margin: 0 40px;
+	}
+}
+
+@media screen and(max-width: 414px) {
+	.central-paragraph {
+		margin: 0;
+	}
 
 }

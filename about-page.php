@@ -13,20 +13,46 @@ echo $image;
 
 <section class="quote" style="background-image: url('<?php echo $post_image[0]; ?>')">
   <div class="container">
-    <h2 class="quote__title"><?php echo $page->format_content($page->field('page_quote_text')); ?></h2>
-    <h2 class="quote__author"><?php echo $page->format_content($page->field('page_quote_author_text')); ?></h2>
+    <h2 class="quote__title">Page Quote</h2>
+    <h2 class="quote__author">Page Quote Author</h2>
   </div>
 </section>
 
-<section class="two-block">
-  <div class="two-block__section two-block__section--padding-right">
-    <h3 class="two-block__title">Our Vision</h3>
-    <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?>
-  </div>
-  <div class="two-block__section two-block__section--padding-left">
-    <h3 class="two-block__title">Branches</h3>
-  <?php echo $about_us->format_content($about_us->field('our_branches_text')); ?>
-  </div>
+<section class="row row--no-margin forest-green">
+  <section class="container ">
+    <div class="central-paragraph">
+      <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
+      <p>Launched in 2012, the Inclusive Mosque Initiative is a charity dedicated to creating safe spaces for marginalised communities, spiritual practice and the promotion of inclusive Islamic principles.  Our events are held mostly in London but our work takes us all over the UK. 
+
+      Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind. Tamsila's late mother was severely disabled and was told she couldn't pray in the main area of her local mosque. She was told to pray in the upper floor with the women, where she was not physically able to go. In regular mosques, Dervla, like other mothers, is usually separated from her teenage son and is required to send him to the men's area. 
+
+      We have found that in many mosques, families are separated in prayer space. We want to make a mosque that is accessible to different communities and not based on language, ethnicity, religious sect or gender. If Allah(swt) can accept our differences, then we can too. 
+
+      We currently host regular Friday prayers, seminars and discussion groups. We aim to create a family-friendly  place of worship that is a safe space for people regardless of their religious belief, their race, gender, impairments, sexuality or immigration status. </p>
+
+    </div>
+  </section>
+    <!-- Branches info may be included at a a later date. -->
+  <!--   <div class="two-block__section two-block__section--padding-left">
+      <h3 class="two-block__title">Branches</h3>
+    <?php echo $about_us->format_content($about_us->field('our_branches_text')); ?>
+    </div> -->
+</section>
+
+<section class="row row--no-margin ruby">
+  <section class="container ">
+    <div class="central-paragraph">
+      <h2 class="heading--one heading--bold heading--secondary heading--asset u-align-center">Our Vision</h2>
+      <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
+      <p>At the moment we rent out different wheelchair-accessible spaces, mostly in London, to hold our events. We are working towards owning or renting a permanent space that will be a peaceful place of worship for Muslims from all backgrounds and understandings. Like our current events, it will be a place where all people are welcome, a place that respects gender expression and gender justice, and a place that houses inter-community and inter-faith dialogue. We are mindful of respecting the environment and aim to create as eco-friendly a space as possible.</p>
+
+    </div>
+  </section>
+    <!-- Branches info may be included at a a later date. -->
+  <!--   <div class="two-block__section two-block__section--padding-left">
+      <h3 class="two-block__title">Branches</h3>
+    <?php echo $about_us->format_content($about_us->field('our_branches_text')); ?>
+    </div> -->
 </section>
 
 <section class="container">
@@ -34,9 +60,7 @@ echo $image;
   <section class="team">
 
     <div class="team-block">
-      <div class="team-block__image">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/tamsila-tauqir.jpg">
-      </div>
+      <img class="team-block__image" class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/tamsila-tauqir.jpg">
       <div class="team-block__info">
         <h4 class="team-block__name">Tamsila Tauqir MBE | <span>Co-founder & Trustee</span></h4>
         <div class="team-block__bio">
@@ -47,9 +71,7 @@ Tamsila Tauqir MBE is a freelance consultant on issues of policy and intersectio
     </div>
 
     <div class="team-block">
-      <div class="team-block__image">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-2.jpg">
-      </div>
+      <img class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-2.jpg">
       <div class="team-block__info">
         <h4 class="team-block__name">Dervla Shannahan | <span>Co-founder</span></h4>
         <div class="team-block__bio">
@@ -60,9 +82,7 @@ Dervla Zaynab is an academic who has published on a range of subjects including 
     </div>
 
     <div class="team-block">
-      <div class="team-block__image">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-3.jpg">
-      </div>
+      <img class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-3.jpg">
       <div class="team-block__info">
         <h4 class="team-block__name">Halima Gosai Hussain | <span>Co-founder & Trustee</span></h4>
         <div class="team-block__bio">
@@ -73,9 +93,7 @@ Halima has worked for Muslim organisations of varying perspectives for over 10 y
     </div>
 
     <div class="team-block">
-      <div class="team-block__image">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/wasi-daniju.jpg">
-      </div>
+      <img class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/wasi-daniju.jpg">
       <div class="team-block__info">
         <h4 class="team-block__name">Wasi Daniju | <span>Board Member</span></h4>
         <div class="team-block__bio">
@@ -86,9 +104,7 @@ Wasi Daniju is a qualified Person-Centred therapist, and a <a class="link" href=
     </div>
 
     <div class="team-block">
-      <div class="team-block__image">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/images/team/naima-khan.jpg">
-      </div>
+      <img class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/naima-khan.jpg">
       <div class="team-block__info">
         <h4 class="team-block__name">Naima Khan | <span>Trustee</span></h4>
         <div class="team-block__bio">

@@ -19,11 +19,9 @@
 
 .row {
     margin: 40px 0;
-}
 
-@media only screen and (max-width: 1200px) {
-    .container {
-        padding: 20px;
+    &--no-margin {
+        margin: 0;
     }
 }
 

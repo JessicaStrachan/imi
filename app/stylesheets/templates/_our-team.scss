@@ -14,19 +14,10 @@
 
   &__image {
     background-color: $_color-peach;
-    height: 350px;
+    height: auto;
     max-height: 50%;
     overflow: hidden;
     position: relative;
-
-    img {
-      height: auto;
-      overflow: hidden;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-    }
   }
 
   &__info {
@@ -66,10 +57,13 @@
 
 @media screen and(max-width: 768px) {
   .team-block {
+    width: calc(50% - 20px);
+
+  }
+}
+
+@media screen and(max-width: 414px) {
+  .team-block {
     width: 100%;
-
-    &__image {
-
-    }
   }
 }

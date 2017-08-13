@@ -35,6 +35,14 @@
     color: $_color-teal;
   }
 
+  &--secondary {
+    color: #fee8c4;
+
+    &.heading--asset::after {
+      background-color: #fee8c4;
+    }
+  }
+
   &__link {
     text-decoration: none;
   }
