@@ -199,6 +199,13 @@
       padding: 15px 61px;
     }
   }
+
+  .footer__top--contact {
+    &-email,
+    &-tel {
+      @include font-size(1.4);
+      }
+  }
 }
 
 @media only screen and (max-width: 375px) {

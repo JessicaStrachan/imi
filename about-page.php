@@ -98,7 +98,7 @@ Halima has worked for Muslim organisations of varying perspectives for over 10 y
         <h4 class="team-block__name">Wasi Daniju | <span>Board Member</span></h4>
         <div class="team-block__bio">
           <p>
-Wasi Daniju is a qualified Person-Centred therapist, and a <a class="link" href="http://wasidaniju.500px.com/">photographer</a>, with a focus on photojournalism and depiction of lesser-represented groups.  She has a keen interest in social and ecological justice, and regularly engages in community organising. </p>
+Wasi Daniju is a qualified Person-Centred therapist, and a <a class="link" href="http://wasidaniju.500px.com/">photographer</a>, with a focus on photojournalism and depiction of lesser-represented groups.  She has a keen interest in social and ecological justice, and regularly engages in community organising.</p>
         </div>
       </div>
     </div>
@@ -109,13 +109,10 @@ Wasi Daniju is a qualified Person-Centred therapist, and a <a class="link" href=
         <h4 class="team-block__name">Naima Khan | <span>Trustee</span></h4>
         <div class="team-block__bio">
           <p>
-Naima Khan works in communications and has seven years’ experience producing content on the arts, religion and the third sector. She has an interest in the ways artists can contribute to our understanding of socio-politics our collective histories and how this can be applied in places of worship. </p>
+Naima Khan works in communications and has seven years’ experience producing content on the arts, religion and the third sector. She has an interest in the ways artists can contribute to our understanding of socio-politics our collective histories and how this can be applied in places of worship.</p>
         </div>
       </div>
-    </div>
-
-
-
+    </div>  
 
   </section>
 </section>
