@@ -56,7 +56,8 @@
 		text-transform: uppercase;
 	}
 
-	&__input {
+	&__input,
+	&__verification {
 		@include font-size(1.6);
 		background-color: $color-sandy-beach;
 		border: 1px solid $color-sandy-beach;
@@ -75,10 +76,39 @@
 		}
 	}
 
+	&__verification {
+		max-width: 60px;
+		margin-bottom: 0;
+	}
+
+	&__sum {
+		@include font-size(1.4);
+		color: rgb(145, 30, 55);
+	}
+
 	&__btn {
 		border: none;
 		margin-top: 25px;
 	}
+}
+     
+.success,
+.error {
+	padding: 40px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.success {
+	color: green;
+}
+
+.error {
+	color: red;
+}
+
+form span{
+	color: red;
 }
 
 @media screen and(max-width: 789px) {

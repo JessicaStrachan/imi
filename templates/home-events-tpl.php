@@ -27,7 +27,7 @@ $results = $events->query($query_args);
           <h2 class="heading--two heading--bold"><?php the_title(); ?></h2>
           <h3 class="heading--three heading--bold"><?php echo $event->format_content($event->field('event_date_text')); ?></h3>
           <p><?php echo $event->format_content($event->field('event_address_text')); ?></p>
-          <p class="card__excerpt"><?php echo $event->format_content($event->field('event_excerpt_text')); ?></p>
+          <!-- <p class="card__excerpt"><?php echo $title; ?></p> -->
           <p class="card__read-more">Read More</p>
         </div>
 

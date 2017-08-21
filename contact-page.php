@@ -11,8 +11,8 @@ function my_contact_form_generate_response($type, $message){
 
 global $response;
 
-if($type == "success") $response = "<div class='success'><p>{$message}</p></div>";
-else $response = "<div class='error'><p>{$message}</p></div>";
+if($type == "success") $response = "<div class='success'>{$message}</div>";
+else $response = "<div class='error'>{$message}</div>";
 
 }
 
@@ -90,42 +90,6 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 	</div>
 	<div class="js-form">
 
-    <div id="respond">
-        <?php echo $response; ?>
-        <form class="form grid js-media-form" action="<?php the_permalink(); ?>" method="post">
-            <div class="form__row">
-                <div class="col-6">
-                    <label class="form__label" for="name">Name: <span>*</span> </label>
-                    <input class="form__input" type="text" name="message_name" value="<?php echo esc_attr($_POST['message_name']); ?>">
-                </div>
-                <div class="col-6">
-                    <label class="form__label" for="surname">Surname</label>
-                    <input class="form__input form__input--no-right-space" type="text" name="surname" value="<?php echo esc_attr($_POST['last_name']); ?>">
-                </div>
-            </div>
-            <div class="form__row">
-                <div class="col-6">
-                    <label class="form__label" for="message_email">Email: <span>*</span></label>
-                    <input class="form__input" type="text" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>">
-                </div>
-                <div class="col-6">
-                   <label class="form__label" for="contact-number">Contact Number</label>
-                   <input class="form__input form__input--no-right-space" type="tel" name="number" value="<?php echo esc_attr($_POST['telephone']); ?>">     
-                </div>
-            </div>
-            <label class="form__label" for="message_text">Message: <span>*</span></label>
-            <textarea class="form__input" type="text" name="message_text"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
-
-            <label class="form__label" for="message_human">Human Verification: <span>*</span></label>
-            <div class="flex flex--align-center">
-                <input class="form__verification" type="text" name="message_human">
-                <p class="form__sum">+ 3 = 5</p>
-            </div>
-
-            <input type="hidden" name="submitted" value="1">
-            <input class="form__btn btn btn--secondary btn--submit" type="submit">
-        </form>
-    </div>
 
 
 
