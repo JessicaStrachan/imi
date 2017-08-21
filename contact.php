@@ -92,7 +92,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 
     <div id="respond">
         <?php echo $response; ?>
-        <form class="form grid js-media-form" action="<?php the_permalink(); ?>" method="post">
+        <form class="form grid js-contact-form" action="<?php the_permalink(); ?>" method="post">
             <div class="form__row">
                 <div class="col-6">
                     <label class="form__label" for="name">Name: <span>*</span> </label>
@@ -187,33 +187,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 			<input class="form__btn btn btn--secondary btn--submit" type="submit" value="submit" name="submit">
 		</form>
 	</div>
-	<div class="js-form">
-        <form class="form grid js-contact-form">
-            <div class="form__row">
-                <div class="col-6">
-                    <label class="form__label" for="first-name">First Name</label>
-                    <input class="form__input col-6" type="text" id="first-name">
-                </div>
-                <div class="col-6">
-                    <label class="form__label" for="surname">Surname</label>
-                    <input class="form__input form__input--no-right-space col-6" type="text" id="surname">
-                </div>
-            </div>
-            <div class="form__row">
-                <div class="col-6">
-                    <label class="form__label" for="email">Email</label>
-                    <input class="form__input col-6" type="email" id="email">
-                </div>
-                <div class="col-6">
-                    <label class="form__label" for="contact-number">Contact Number</label>
-                    <input class="form__input form__input--no-right-space col-6" type="tel" id="number">
-                </div>
-            </div>
-            <label class="form__label" for="message">Your message</label>
-            <textarea class="form__input form__input--no-right-space col-12" maxlength="3000" rows="15" type="textarea" id="message"></textarea>
-            <input class="form__btn btn btn--secondary btn--submit" type="submit" name="submit">
-        </form>
-  	</div>
+
   	<div class="js-form">
         <form class="form grid js-research-form">
             <div class="form__row">
