@@ -24,10 +24,12 @@ $message_unsent  = "Message was not sent. Try Again.";
 $message_sent    = "Thanks! Your message has been sent.";
  
 //user posted variables
-$name = $_POST['message_name'];
-$email = $_POST['message_email'];
-$message = $_POST['message_text'];
-$human = $_POST['message_human'];
+$first_name = $_POST['first_name'];
+$last_name = $_POST['last_name'];
+$email = $_POST['email'];
+$telephone = $_POST['telephone'];
+$message = $_POST['message'];
+$human = $_POST['human'];
  
 //php mailer variables
 $to = get_option('admin_email');
@@ -45,12 +47,12 @@ if(!$human == 0){
     else //email is valid
     {
         //validate presence of name and message
-        if(empty($name) || empty($message)){
+        if(empty($first_name) || empty($message) || empty($last_name)){
           my_contact_form_generate_response("error", $missing_content);
         }
         else //ready to go!
         {
-            $sent = wp_mail($to, $subject, strip_tags($message), $headers);
+            $sent = wp_mail($to, $subject, strip_tags($message), $headers, $first_name, $last_name);
             if($sent) my_contact_form_generate_response("success", $message_sent); //message sent!
             else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
         }
@@ -95,30 +97,30 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
         <form class="form grid js-contact-form" action="<?php the_permalink(); ?>" method="post">
             <div class="form__row">
                 <div class="col-6">
-                    <label class="form__label" for="name">Name: <span>*</span> </label>
-                    <input class="form__input" type="text" name="message_name" value="<?php echo esc_attr($_POST['message_name']); ?>">
+                    <label class="form__label" for="first_name">Name: <span>*</span> </label>
+                    <input class="form__input" type="text" name="first_name" value="<?php echo esc_attr($_POST['first_name']); ?>">
                 </div>
                 <div class="col-6">
-                    <label class="form__label" for="surname">Surname</label>
-                    <input class="form__input form__input--no-right-space" type="text" name="surname" value="<?php echo esc_attr($_POST['last_name']); ?>">
+                    <label class="form__label" for="last_name">Surname</label>
+                    <input class="form__input form__input--no-right-space" type="text" name="last_name" value="<?php echo esc_attr($_POST['last_name']); ?>">
                 </div>
             </div>
             <div class="form__row">
                 <div class="col-6">
-                    <label class="form__label" for="message_email">Email: <span>*</span></label>
-                    <input class="form__input" type="text" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>">
+                    <label class="form__label" for="email">Email: <span>*</span></label>
+                    <input class="form__input" type="text" name="email" value="<?php echo esc_attr($_POST['email']); ?>">
                 </div>
                 <div class="col-6">
-                   <label class="form__label" for="contact-number">Contact Number</label>
-                   <input class="form__input form__input--no-right-space" type="tel" name="number" value="<?php echo esc_attr($_POST['telephone']); ?>">     
+                   <label class="form__label" for="telephone">Contact Number</label>
+                   <input class="form__input form__input--no-right-space" type="tel" name="telephone" value="<?php echo esc_attr($_POST['telephone']); ?>">     
                 </div>
             </div>
-            <label class="form__label" for="message_text">Message: <span>*</span></label>
-            <textarea class="form__input" type="text" name="message_text"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
+            <label class="form__label" for="message">Message: <span>*</span></label>
+            <textarea class="form__input" type="text" name="message"><?php echo esc_textarea($_POST['message']); ?></textarea>
 
-            <label class="form__label" for="message_human">Human Verification: <span>*</span></label>
+            <label class="form__label" for="human">Human Verification: <span>*</span></label>
             <div class="flex flex--align-center">
-                <input class="form__verification" type="text" name="message_human">
+                <input class="form__verification" type="text" name="human">
                 <p class="form__sum">+ 3 = 5</p>
             </div>
 
@@ -132,7 +134,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 
 
 
-		<form class="form grid js-media-form" name="contact-form" method="post" action="send_form_email.php">
+		<form class="form grid js-media-form">
             <div class="form__row">
                 <div class="col-6">
                     <label class="form__label" for="first_name">First Name</label>
