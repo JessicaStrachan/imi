@@ -2,6 +2,8 @@
 	@include font-size(2);
 	text-align: center;
 	color: $contact-address;
+	display: flex;
+	justify-content: center;
 
 	&__links {
 		display: flex;
