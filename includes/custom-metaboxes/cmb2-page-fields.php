@@ -4,6 +4,10 @@ $page_quote = new_cmb2_box([
   'id' => 'page_quote',
   'title' => __('Page Quote', 'imi'),
   'object_types' => ['page'],
+  'show_on'      => [
+    'key'   => 'page-template',
+    'value' => 'single.php'
+  ],
   'context' => 'normal',
   'priority' => 'high',
   'show_names' => true
