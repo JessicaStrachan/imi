@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'publica_sansbold';
+    src: url('../fonts/publicasans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/publicasans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'publica_sansmedium';
+    src: url('../fonts/publicasans-medium-webfont.woff2') format('woff2'),
+         url('../fonts/publicasans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$heading-font: 'publica_sansbold';
+$base-font: 'publica_sansmedium';
+
+.heading--one,
+.heading--two,
+.heading--three {
+  font-family: $heading-font;
+}
+
+body {
+  font-family: $base-font;
+  line-height: 1.4;
+  margin: 0;
+}
+
+
 .heading {
   &--one {
     @include font-size(5);  
@@ -9,10 +41,6 @@
 
   &--three {
     @include font-size(1.2);  
-  }
-
-  &--bold {
-    font-weight: 700  
   }
 
   &--asset {

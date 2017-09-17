@@ -1,5 +1,7 @@
 .btn {
   @include font-size(1.8);
+  font-family: $base-font;
+  font-weight: 400;
   padding: 15px 40px;
   position: absolute;
   text-align: center;

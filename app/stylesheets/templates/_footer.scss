@@ -55,7 +55,7 @@
       &-tel {
         @include font-size(1.8);
         color: $footer-links;
-        font-weight: 700;
+        font-family: $base-font;
         text-decoration: none;
         transition: opacity .6s ease;
 
