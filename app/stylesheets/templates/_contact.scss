@@ -51,7 +51,7 @@
 		@include font-size(1.4);
 		color: $_color-teal;
 		display: block;
-		font-family: 'Reem Kufi', sans-serif;
+		font-family: $base-font;
 		margin-bottom: 10px;
 		text-transform: uppercase;
 	}

@@ -12,7 +12,7 @@
           </div>
           <div class="footer__top--support">
             <h2 class="heading--two heading--bold">Support Us</h2>
-            <h4 class="heading--bold">Please join our mailing list. All information is kept confidential and your identity is not shared with anyone else.</h4>
+            <h4>Please join our mailing list. All information is kept confidential and your identity is not shared with anyone else.</h4>
             <?php echo do_shortcode("[mc4wp_form id='6617']"); ?>
           </div>
         </div>
