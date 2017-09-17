@@ -4,7 +4,6 @@
 */
 get_header();
 
-$page = new CMB2Fields(get_the_ID());
 $about_us = new CMB2Fields(get_the_ID());
 
 $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
@@ -13,8 +12,8 @@ echo $image;
 
 <section class="quote" style="background-image: url('<?php echo $post_image[0]; ?>')">
   <div class="container">
-    <h2 class="quote__title">Page Quote</h2>
-    <h2 class="quote__author">Page Quote Author</h2>
+    <h2 class="quote__title"><?php echo $about_us->format_content($about_us->field('about_quote_text')); ?></h2>
+    <h2 class="quote__author"><?php echo $about_us->format_content($about_us->field('about_quote_author_text')); ?></h2>
   </div>
 </section>
 
