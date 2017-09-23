@@ -107,3 +107,33 @@ $events_quote_author->add_field([
   'id' => $prefix . 'event_quote_author_text',
   'type' => 'text'
 ]);
+
+$events_gallery = new_cmb2_box([
+  'id' => 'event_gallery',
+  'title' => __('Event Gallery', 'imi'),
+  'object_types' => ['events'],
+  'context' => 'normal',
+  'priority' => 'high',
+  'show_names' => true
+]);
+
+$events_gallery->add_field([
+  'desc' => __('Upload jpeg file'),
+  'id' => $prefix . 'event_gallery_image_1',
+  'type' => 'file',
+  'allow' => ['attachment']
+]);
+
+$events_gallery->add_field([
+  'desc' => __('Upload jpeg file'),
+  'id' => $prefix . 'event_gallery_image_2',
+  'type' => 'file',
+  'allow' => ['attachment']
+]);
+
+$events_gallery->add_field([
+  'desc' => __('Upload jpeg file'),
+  'id' => $prefix . 'event_gallery_image_3',
+  'type' => 'file',
+  'allow' => ['attachment']
+]);
