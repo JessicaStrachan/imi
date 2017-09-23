@@ -11,7 +11,7 @@ echo $image;
 ?>
 
 <section class="quote" style="background-image: url('<?php echo $post_image[0]; ?>')">
-  <div class="container">
+  <div class="quote__inner">
     <h2 class="quote__title"><?php echo $about_us->format_content($about_us->field('about_quote_text')); ?></h2>
     <h2 class="quote__author"><?php echo $about_us->format_content($about_us->field('about_quote_author_text')); ?></h2>
   </div>
