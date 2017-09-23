@@ -2,12 +2,18 @@
   background-color: $header-quote-background-color;
   background-position: center center;
   background-size: cover;
+  height: 250px;
   margin-top: 140px;
+  position: relative;
+  text-align: center;
 
-  .container {
-      max-width: 1200px;
-      padding: 40px;
-      text-align: center;
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 
   &__title {
