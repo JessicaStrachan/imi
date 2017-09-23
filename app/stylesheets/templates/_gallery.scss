@@ -5,4 +5,22 @@
 	&__image {
 		width: calc(33.333% - 20px);
 	}
+
+	@media screen and(max-width: 768px) {
+		&__image {
+			margin-bottom: 40px;
+			width: calc(50% - 20px);
+		}
+	}
+
+	@media screen and(max-width: 414px) {
+		&--space-top {
+			margin-top: 20px;
+		}
+
+		&__image {
+			margin-bottom: 20px;
+			width: 100%
+		}
+	}
 }
