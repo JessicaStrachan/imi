@@ -20,7 +20,7 @@ $results = $events->query($query_args);
 
     <?php
     if($results->have_posts()): while($results->have_posts()): $results->the_post();
-      $event_fields = new CMB2Fields(get_the_ID());
+      $event = new CMB2Fields(get_the_ID());
     ?>
 
     <li class="card grid__col col-4">
