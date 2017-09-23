@@ -1,4 +1,7 @@
 .gallery {
+	&--space-top {
+		margin-top: 40px;
+	}
 	&__image {
 		width: calc(33.333% - 20px);
 	}
