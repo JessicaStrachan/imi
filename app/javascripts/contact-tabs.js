@@ -1,10 +1,4 @@
 (function($) {
-  // $('.js-tab').on('click', function(e) {
-  // 	console.log('hello');
-  //   e.preventDefault();
-  //   $(this).toggleClass('tab-active');
-  // });
-
   $('.js-contact-tab').on('click', function(e) {
     $('.form-tabs__button.tab-active').removeClass('tab-active');
   	$(this).addClass('tab-active');

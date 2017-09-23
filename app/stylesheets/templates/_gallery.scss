@@ -1,0 +1,5 @@
+.gallery{
+	&__image {
+		width: calc(33.333% - 20px);
+	}
+}

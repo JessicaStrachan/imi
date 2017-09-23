@@ -15,15 +15,28 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
   </div>
 </section>
 
-<div class="post">
-  <section class="post__title">
-    <div class="container">
-      <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center"><?php the_title(); ?></h1>
+<div class="container">
+  <div class="post">
+    <section class="post__title">
+        <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center"><?php the_title(); ?></h1>
+    </section>
+    <section class="post__content wysiwyg">
+      <?php the_content(); ?>
+    </section>
+    <div class="contaner container--slim">
+      <section class="gallery grid">
+        <div class="gallery__image">
+            <img class="gallery__media" src="https://unsplash.it/800/800">
+        </div>
+        <div class="gallery__image">
+          <img class="gallery__media" src="https://unsplash.it/800/800">
+        </div>
+        <div class="gallery__image">
+          <img class="gallery__media" src="https://unsplash.it/800/800">
+        </div>
+      </section>
     </div>
-  </section>
-  <section class="post__content wysiwyg">
-    <?php the_content(); ?>
-  </section>
+  </div>
 </div>
 
  <?php

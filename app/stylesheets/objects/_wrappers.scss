@@ -4,6 +4,11 @@
     padding: 40px;
     position: relative;
 
+    &--slim {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
     &--border-top {
         border-top: 1px solid $_color-lime-green;
     }
