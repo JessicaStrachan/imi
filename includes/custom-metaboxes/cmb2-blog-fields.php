@@ -20,3 +20,33 @@ $blog_quote->add_field([
   'id' => $prefix . 'blog_quote_author_text',
   'type' => 'text'
 ]);
+
+$blog_gallery = new_cmb2_box([
+  'id' => 'blog_gallery',
+  'title' => __('Blog Gallery', 'imi'),
+  'object_types' => ['post'],
+  'context' => 'normal',
+  'priority' => 'high',
+  'show_names' => true
+]);
+
+$blog_gallery->add_field([
+  'desc' => __('Upload jpeg file'),
+  'id' => $prefix . 'blog_gallery_image_1',
+  'type' => 'file',
+  'allow' => ['attachment']
+]);
+
+$blog_gallery->add_field([
+  'desc' => __('Upload jpeg file'),
+  'id' => $prefix . 'blog_gallery_image_2',
+  'type' => 'file',
+  'allow' => ['attachment']
+]);
+
+$blog_gallery->add_field([
+  'desc' => __('Upload jpeg file'),
+  'id' => $prefix . 'blog_gallery_image_3',
+  'type' => 'file',
+  'allow' => ['attachment']
+]);
