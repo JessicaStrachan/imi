@@ -42,6 +42,10 @@
   .quote {
     margin-top: 100px;
 
+    &__title {
+      @include font-size(4);
+    }
+
     .container {
       padding: 20px
     }
@@ -49,7 +53,17 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .quote .container {
-    padding: 10px
+  .quote {
+    &__title {
+      @include font-size(2)
+    }
+
+    &__author {
+      @include font-size(1.2)
+    }
+
+    .container {
+      padding: 10px
+    }
   }
 }

@@ -2,7 +2,7 @@
 
 $events = new Query('events');
 $query_args = [
-  'posts_per_page' => -1
+  'posts_per_page' => 3
 ];
 $results = $events->query($query_args);
 ?>

@@ -85,7 +85,13 @@ body {
 }
 
 @media screen and(max-width: 414px) {
-  .heading--one {
-    @include font-size(2);
+  .heading {
+    &--one {
+      @include font-size(2);
+    }
+
+    &--asset::after {
+      width: 200px;
+    }
   }
 }

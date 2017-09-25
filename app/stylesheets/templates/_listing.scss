@@ -64,7 +64,6 @@
 
 @media only screen and (max-width: 1115px) {
   .card {
-
     &:nth-child(3n+3) {
       margin-right: 20px;
     }
@@ -92,5 +91,9 @@
 
   .card {
     margin: 0 0 20px 0;
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
   }
 }
