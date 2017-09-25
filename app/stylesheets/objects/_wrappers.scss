@@ -31,7 +31,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .container--header-top {
-        margin-top: 100px;
+    .container {
+        &--header-top {
+            margin-top: 100px;
+        }
+
+        &--vh-top {
+            margin-top: 10vh;
+        }
     }
 }

@@ -118,4 +118,8 @@
 			width: 100%;
 		}
 	}
+
+	.address__link {
+		@include font-size(1.4)
+	}
 }

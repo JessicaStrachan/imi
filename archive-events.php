@@ -20,7 +20,7 @@ $results = $events->query($query_args);
 
     <?php
     if($results->have_posts()): while($results->have_posts()): $results->the_post();
-      $event_fields = new CMB2Fields(get_the_ID());
+      $event = new CMB2Fields(get_the_ID());
     ?>
 
     <li class="card grid__col col-4">
@@ -30,10 +30,10 @@ $results = $events->query($query_args);
 
         <div class="card__media" style="background-image: url('<?php echo $post_image[0]; ?>')"></div>
         <div class="card__info">
-          <h2 class="heading--two heading--bold"><?php the_title(); ?></h2>
-          <h3 class="heading--three heading--bold"><?php echo $event->format_content($event->field('event_date_text')); ?></h3>
-          <p><?php echo $event->format_content($event->field('event_address_text')); ?></p>
-          <p class="card__excerpt"><?php echo $event->format_content($event->field('event_excerpt_text')); ?></p>
+          <h2 class="card__title"><?php the_title(); ?></h2>
+          <p class="card__details"><?php echo $event->field('event_date_text'); ?>, 
+          <?php echo $event->field('event_address_text'); ?></p>
+          <p class="card__excerpt"><?php echo $event->field('event_excerpt_text'); ?></p>
           <p class="card__read-more">Read More</p>
         </div>
 

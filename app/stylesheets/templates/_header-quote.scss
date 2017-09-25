@@ -7,6 +7,15 @@
   position: relative;
   text-align: center;
 
+  &::after {
+    background-color: rgba(#000, .4);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
   &__inner {
     position: absolute;
     top: 50%;
@@ -14,6 +23,7 @@
     padding: 40px;
     transform: translate(-50%, -50%);
     width: 100%;
+    z-index: 2;
   }
 
   &__title {
@@ -32,6 +42,10 @@
   .quote {
     margin-top: 100px;
 
+    &__title {
+      @include font-size(4);
+    }
+
     .container {
       padding: 20px
     }
@@ -39,7 +53,17 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .quote .container {
-    padding: 10px
+  .quote {
+    &__title {
+      @include font-size(2)
+    }
+
+    &__author {
+      @include font-size(1.2)
+    }
+
+    .container {
+      padding: 10px
+    }
   }
 }
