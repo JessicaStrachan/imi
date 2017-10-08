@@ -1,9 +1,7 @@
 .card {
   background-color:$blog-listing-block-background;
-  margin-right: 20px;
   margin-top: 20px;
-  max-width: 325px;
-  min-height: 450px;
+  width: calc(33.333% - 20px);
 
   &:nth-child(3n+3) {
     margin-right: 0;
@@ -36,22 +34,36 @@
     padding: 20px;
   }
 
+  &__title {
+    @include font-size(1.75)
+    font-weight: 700;
+    color: $blog-listing-block-text-color;
+  }
+
+  &__details {
+    @include font-size(1.25);
+    border-top: 1px solid $_color-teal;
+    font-style: italic;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
   &__excerpt {
-    @include font-size(1.6)
+    @include font-size(1.25)
     color: $blog-listing-block-text-color;
   }
 
   &__read-more {
-    @include font-size(1.8);
+    @include font-size(1.25);
     color: $blog-listing-read-more-color;
     font-weight: 700;
+    margin-top: 10px;
     text-transform: uppercase;
   }
 }
 
 @media only screen and (max-width: 1115px) {
   .card {
-
     &:nth-child(3n+3) {
       margin-right: 20px;
     }
@@ -79,5 +91,9 @@
 
   .card {
     margin: 0 0 20px 0;
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
   }
 }

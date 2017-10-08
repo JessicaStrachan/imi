@@ -4,6 +4,11 @@
     padding: 40px;
     position: relative;
 
+    &--slim {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
     &--border-top {
         border-top: 1px solid $_color-lime-green;
     }
@@ -26,7 +31,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .container--header-top {
-        margin-top: 100px;
+    .container {
+        &--header-top {
+            margin-top: 100px;
+        }
+
+        &--vh-top {
+            margin-top: 10vh;
+        }
     }
 }

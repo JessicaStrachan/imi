@@ -2,12 +2,28 @@
   background-color: $header-quote-background-color;
   background-position: center center;
   background-size: cover;
+  height: 250px;
   margin-top: 140px;
+  position: relative;
+  text-align: center;
 
-  .container {
-      max-width: 1200px;
-      padding: 40px;
-      text-align: center;
+  &::after {
+    background-color: rgba(#000, .4);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 2;
   }
 
   &__title {
@@ -18,12 +34,17 @@
   &__author {
     @include font-size(2);
     color: $header-quote-author-color;
+    font-family: $heading-font;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .quote {
     margin-top: 100px;
+
+    &__title {
+      @include font-size(4);
+    }
 
     .container {
       padding: 20px
@@ -32,7 +53,17 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .quote .container {
-    padding: 10px
+  .quote {
+    &__title {
+      @include font-size(2)
+    }
+
+    &__author {
+      @include font-size(1.2)
+    }
+
+    .container {
+      padding: 10px
+    }
   }
 }

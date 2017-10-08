@@ -8,7 +8,7 @@ endforeach;
 ?>
 
 <div class="container container--border-top">
-  <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center">Recent Blog Posts</h1>
+  <h1 class="heading--one heading--bold heading--primary u-align-center">Recent Blog Posts</h1>
   <ul class="grid grid--space-bottom">
 
     <?php
@@ -26,7 +26,8 @@ endforeach;
 
         <div class="card__media" style="background-image: url('<?php echo $post_image[0]; ?>')"></div>
         <div class="card__info">
-          <h2 class="heading--two heading--bold"><?php the_title(); ?></h2>
+          <h2 class="card__title"><?php the_title(); ?></h2>
+          <?php the_excerpt(); ?>
 
           <p class="card__read-more">Read More</p>
         </div>

@@ -62,20 +62,20 @@ else if ($_POST['submitted']) my_contact_form_generate_response("error", $missin
 
 get_header();
 
-$page = new CMB2Fields(get_the_ID());
+$contact_page = new CMB2Fields(get_the_ID());
 
 $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
 ?>
 
 <section class="quote" style="background-image: url('<?php echo $post_image[0]; ?>')">
-  <div class="container">
-    <h2 class="quote__title"><?php echo $page->format_content($page->field('page_quote_text')); ?></h2>
-    <h2 class="quote__author"><?php echo $page->format_content($page->field('page_quote_author_text')); ?></h2>
+  <div class="quote__inner">
+    <h2 class="quote__title"><?php echo $contact_page->format_content($contact_page->field('contact_quote_text')); ?></h2>
+    <h2 class="quote__author"><?php echo $contact_page->format_content($contact_page->field('contact_quote_author_text')); ?></h2>
   </div>
 </section>
 
 <section class="container">
-	<h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Contact Us</h2>
+	<h2 class="heading--one heading--bold heading--primary u-align-center">Contact Us</h2>
 	<div class="address">
 		<div class="address__links">
 			<a class="address__link" href="mailto:admin@inclusivemosqueinitiative.org">admin@inclusivemosqueinitiative.org</a>
