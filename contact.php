@@ -17,7 +17,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 </section>
 
 <section class="container">
-	<h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Contact Us</h2>
+	<h2 class="heading--one heading--bold heading--primary u-align-center">Contact Us</h2>
 	<div class="address">
 		<div class="address__links">
 			<a class="address__link" href="mailto:admin@inclusivemosqueinitiative.org">admin@inclusivemosqueinitiative.org</a>

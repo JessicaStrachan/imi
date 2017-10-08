@@ -16,7 +16,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 
 <section>
   <div class="container">
-    <h1 class="heading--one heading--bold heading--primary heading--asset u-align-center">Press Articles</h1>
+    <h1 class="heading--one heading--bold heading--primary u-align-center">Press Articles</h1>
   </div>
 </section>
 

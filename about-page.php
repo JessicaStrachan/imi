@@ -41,7 +41,7 @@ echo $image;
 <section class="row row--no-margin ruby">
   <section class="container ">
     <div class="central-paragraph">
-      <h2 class="heading--one heading--bold heading--secondary heading--asset u-align-center">Our Vision</h2>
+      <h2 class="heading--one heading--bold heading--secondary u-align-center">Our Vision</h2>
       <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
       <p>At the moment we rent out different wheelchair-accessible spaces, mostly in London, to hold our events. We are working towards owning or renting a permanent space that will be a peaceful place of worship for Muslims from all backgrounds and understandings. Like our current events, it will be a place where all people are welcome, a place that respects gender expression and gender justice, and a place that houses inter-community and inter-faith dialogue. We are mindful of respecting the environment and aim to create as eco-friendly a space as possible.</p>
 
@@ -55,7 +55,7 @@ echo $image;
 </section>
 
 <section class="container">
-  <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center">Our Team</h2>
+  <h2 class="heading--one heading--bold heading--primary u-align-center">Our Team</h2>
   <section class="team">
 
     <div class="team-block">

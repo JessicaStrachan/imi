@@ -14,7 +14,7 @@ get_header();
 
 <div class="container container--header-top">
 
-  <h2 class="heading--one heading--bold heading--primary heading--asset u-align-center"><?php the_title(); ?></h2>
+  <h2 class="heading--one heading--bold heading--primary u-align-center"><?php the_title(); ?></h2>
 
   <section class="blog">
 
