@@ -40,7 +40,7 @@ $events_excerpt = new_cmb2_box([
 ]);
 
 $events_excerpt->add_field([
-  'desc' => __('Enter text to be displayed as excerpt on listing page card' 'cmb2'),
+  'desc' => __('Enter text to be displayed as excerpt on listing page card'),
   'id' => $prefix . 'event_excerpt_text',
   'type' => 'text'
 ]);
