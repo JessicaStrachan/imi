@@ -20,9 +20,11 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
     <section class="post__title">
         <h1 class="heading--one heading--bold heading--primary u-align-center"><?php the_title(); ?></h1>
     </section>
+    <div class="post__featured-image" style="background-image: url('<?php echo $post_image[0]; ?>')"></div> 
     <section class="post__content wysiwyg">
       <?php the_content(); ?>
     </section>
+
     <div class="contaner container--slim">
       <section class="gallery grid">
         <div class="gallery__image">
@@ -36,6 +38,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
         </div>
       </section>
     </div>
+
   </div>
 </div>
 
