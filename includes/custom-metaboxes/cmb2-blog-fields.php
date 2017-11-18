@@ -9,6 +9,22 @@ $blog_quote = new_cmb2_box([
   'show_names' => true
 ]);
 
+$blog_header = new_cmb2_box([
+  'id' => 'blog_header',
+  'title' => __('Blog Header Image', 'imi'),
+  'object_types' => ['post'],
+  'context' => 'normal',
+  'priority' => 'high',
+  'show_names' => true
+]);
+
+$blog_header->add_field([
+  'desc' => __('Upload jpeg file'),
+  'id' => $prefix . 'blog_header_image',
+  'type' => 'file',
+  'allow' => ['attachment']
+]);
+
 $blog_quote->add_field([
   'desc' => __('Enter text to be displayed as quote'),
   'id' => $prefix . 'blog_quote_text',
