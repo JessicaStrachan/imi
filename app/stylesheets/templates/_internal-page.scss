@@ -2,6 +2,14 @@
   max-width: 1200px;
   margin: 0 auto;
 
+  &__featured-image {
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    max-width: 800px;
+    margin: 40px auto;
+  }
+
   &__title {
     &--date {
       @include font-size(2);
@@ -49,6 +57,22 @@
     h5,
     h6 {
       color: $_color-ruby;
+      margin-bottom: 20px;
     }
+
+    p {
+      margin: 20px 0;
+    }
+
+    /* For soundcloud iframes */
+    iframe {
+      margin: 20px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post__featured-image {
+    height: 350px;
   }
 }
