@@ -18,17 +18,21 @@ echo $image;
 </section>
 
 <section class="row row--no-margin forest-green">
-  <section class="container ">
-    <div class="central-paragraph">
-      <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
-      <p>Launched in 2012, the Inclusive Mosque Initiative is a charity dedicated to creating safe spaces for marginalised communities, spiritual practice and the promotion of inclusive Islamic principles.  Our events are held mostly in London but our work takes us all over the UK. 
+  <section class="container">
+    <div class="flex flex--2-cols">
+      <div class="flex__item">
+        <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
+        <h2>Inclusive Mosque Initiative</h2>
+        <h3>Launched in 2012, the Inclusive Mosque Initiative is a charity dedicated to creating safe spaces for marginalised communities, spiritual practice and the promotion of inclusive Islamic principles.  Our events are held mostly in London but our work takes us all over the UK. </h3>
 
-      Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind. Tamsila's late mother was severely disabled and was told she couldn't pray in the main area of her local mosque. She was told to pray in the upper floor with the women, where she was not physically able to go. In regular mosques, Dervla, like other mothers, is usually separated from her teenage son and is required to send him to the men's area. 
+        <p>Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind. Tamsila's late mother was severely disabled and was told she couldn't pray in the main area of her local mosque. She was told to pray in the upper floor with the women, where she was not physically able to go. In regular mosques, Dervla, like other mothers, is usually separated from her teenage son and is required to send him to the men's area. </p>
+      </div>
+      <div class="flex__item">
+        <p>We have found that in many mosques, families are separated in prayer space. We want to make a mosque that is accessible to different communities and not based on language, ethnicity, religious sect or gender. If Allah(swt) can accept our differences, then we can too. </p>
 
-      We have found that in many mosques, families are separated in prayer space. We want to make a mosque that is accessible to different communities and not based on language, ethnicity, religious sect or gender. If Allah(swt) can accept our differences, then we can too. 
+        <p>We currently host regular Friday prayers, seminars and discussion groups. We aim to create a family-friendly  place of worship that is a safe space for people regardless of their religious belief, their race, gender, impairments, sexuality or immigration status. </p>
 
-      We currently host regular Friday prayers, seminars and discussion groups. We aim to create a family-friendly  place of worship that is a safe space for people regardless of their religious belief, their race, gender, impairments, sexuality or immigration status. </p>
-
+      </div>
     </div>
   </section>
     <!-- Branches info may be included at a a later date. -->
