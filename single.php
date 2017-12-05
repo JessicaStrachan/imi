@@ -18,7 +18,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 <div class="container">
     <div class="post">
         <section class="post__title">
-            <h1 class="heading--one heading--bold heading--primary u-align-center"><?php the_title(); ?></h1>
+            <h1 class="heading--one heading--bold heading--primary"><?php the_title(); ?></h1>
         </section>
 
         <div class="post__featured-image" style="background-image: url('<?php echo $post_image[0]; ?>')"></div>
