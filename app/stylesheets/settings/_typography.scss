@@ -16,6 +16,7 @@
 
 $heading-font: 'publica_sansbold';
 $base-font: 'publica_sansmedium';
+$base-font-size: 12px;
 
 .heading--one,
 .heading--two,
@@ -25,8 +26,10 @@ $base-font: 'publica_sansmedium';
 
 body {
   font-family: $base-font;
+  font-size: $base-font-size;
   line-height: 1.4;
   margin: 0;
+
 }
 
 
