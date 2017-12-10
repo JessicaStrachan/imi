@@ -8,7 +8,7 @@ endforeach;
 ?>
 
 <div class="container container--border-top">
-  <h1 class="heading--one heading--bold heading--primary u-align-center">Recent Blog Posts</h1>
+  <h1 class="heading--one heading--bold heading--primary">Recent Blog Posts</h1>
   <ul class="grid grid--space-bottom">
 
     <?php
@@ -39,6 +39,6 @@ endforeach;
 
   </ul>
 
-  <a class="btn btn--center lime__btn" href="/blog">View All Posts</a>
+  <a class="btn lime__btn" href="/blog">View All Posts</a>
 
 </div>
