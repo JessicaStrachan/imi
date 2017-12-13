@@ -19,7 +19,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
   <div class="post">
     <section class="post__title">
       <div class="container">
-        <h1 class="heading--one heading--bold heading--primary u-align-center"><?php the_title(); ?></h1>
+        <h1 class="heading--one heading--bold heading--primary"><?php the_title(); ?></h1>
       </div>
     </section>
     <section class="post__content wysiwyg">
