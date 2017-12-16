@@ -36,9 +36,9 @@
   }
 
   &__title {
-    @include font-size(5);
+    @include font-size(3);
     color: $header-quote-color;
-    line-height: 5rem;
+    line-height: 1.2;
   }
 
   &__author {
