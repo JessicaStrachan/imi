@@ -1,7 +1,7 @@
+// Need to rename this as no longer centers text
 .central-paragraph {
 	@include font-size(1.6);
 	margin: 40px 150px;
-	text-align: center;
 }
 
 @media screen and(max-width: 768px) {

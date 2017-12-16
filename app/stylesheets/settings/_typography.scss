@@ -70,8 +70,16 @@ body {
     color: #fee8c4;
   }
 
+  &--tertiary {
+    color: rgb(0, 75, 75);
+  }
+
   &__link {
     text-decoration: none;
+  }
+
+  &--space-bottom {
+    padding-bottom: 15px;
   }
 }
 

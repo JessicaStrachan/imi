@@ -9,8 +9,8 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 
 <section class="quote" style="background-image: url('<?php echo $post_image[0]; ?>')">
   <div class="quote__inner">
-    <h2 class="quote__title">This is the quote on Article Page</h2>
-    <h2 class="quote__author">Quote Author</h2>
+    <h2 class="quote__title">"It's no big deal, we can accept our differences"</h2>
+    <h2 class="quote__author">Tamsila Tauquir in The Guardian</h2>
   </div>
 </section>
 

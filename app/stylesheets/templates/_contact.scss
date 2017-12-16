@@ -114,6 +114,18 @@ form span{
 	color: red;
 }
 
+.nf-form-title {
+	display: none;
+}
+
+.nf-field-label label {
+	@include font-size(1.4);
+	color: $_color-teal;
+	display: block;
+	font-family: $base-font;
+	margin-bottom: 10px;
+}
+
 @media screen and(max-width: 789px) {
 	.form {
 		margin-bottom: 20px;
