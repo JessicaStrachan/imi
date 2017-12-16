@@ -81,25 +81,18 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 			<a class="address__link" href="mailto:admin@inclusivemosqueinitiative.org">admin@inclusivemosqueinitiative.org</a>
 		</div>
 	</div>
-	<div class="form-tabs">
-		<button class="form-tabs__button btn--tabs btn btn--secondary js-contact-tab tab-active" data-behaviour="toggle-button" href="#contact">Contact</button>
-		<button class="form-tabs__button btn--tabs btn btn--secondary js-media-tab" data-behaviour="toggle-button" href="#media">Media Requests</button>
-		<button class="form-tabs__button btn--tabs btn btn--secondary js-research-tab" data-behaviour="toggle-button" href="#research">Research Requests</button>
-	</div>
+	<!-- <div class="form-tabs">
+    <ul>
+		  <button class="form-tabs__button btn--tabs btn btn--secondary js-contact-tab tab-active" data-behaviour="toggle-button" href="#contact">Contact</button>
+      <button class="form-tabs__button btn--tabs btn btn--secondary js-media-tab" data-behaviour="toggle-button" href="#media">Media Requests</button>
+    </ul>
+	</div> -->
 	<div class="central-paragraph">
 		<p>Lorem ipsum dolor sit amet, mea id epicuri patrioque hendrerit, id quot perpetua iracundia vix, an suavitate reprimique pri. Id dico discere disputando pro. Sumo sonet eu pri. Ne sit omnes mnesarchum, vix munere impetus molestie ut. Vidisse eruditi quaerendum pri at, soleat aperiri omnesque mel no.</p>
 	</div>
 
     <section class="form form--active" id="contact" data-behaviour="toggle-content">
         <?php echo $contact_page->format_content($contact_page->field('contact_us_contact_shortcode')); ?>
-    </section>
-
-    <section class="form grid" id="media" data-behaviour="toggle-content">
-        <?php echo $contact_page->format_content($contact_page->field('contact_us_media_shortcode')); ?>
-    </section>
-
-    <section class="form grid" id="research" data-behaviour="toggle-content">
-        <?php echo $contact_page->format_content($contact_page->field('contact_us_research_shortcode')); ?>
     </section>
 
 </section>
