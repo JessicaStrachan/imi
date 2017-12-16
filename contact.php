@@ -88,7 +88,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
     </ul>
 	</div> -->
 	<div class="central-paragraph">
-		<p>Lorem ipsum dolor sit amet, mea id epicuri patrioque hendrerit, id quot perpetua iracundia vix, an suavitate reprimique pri. Id dico discere disputando pro. Sumo sonet eu pri. Ne sit omnes mnesarchum, vix munere impetus molestie ut. Vidisse eruditi quaerendum pri at, soleat aperiri omnesque mel no.</p>
+		<p>If you have any queries, media, press or just want to get in touch please contact us through the form below. We’ll endeavour to get back to you as soon as possible.</p>
 	</div>
 
     <section class="form form--active" id="contact" data-behaviour="toggle-content">

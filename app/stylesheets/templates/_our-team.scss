@@ -21,6 +21,7 @@
 
   &__info {
     background-color: $team-block-background-color;
+    flex: 1 0 auto;
     color: $team-block-text-color;
     padding: 20px;
     width: 100%;
@@ -34,7 +35,7 @@
 
   &__role {
     @include font-size(1.6);
-    margin: 5px 0 10px 0;
+    margin-bottom: 10px
   }
 
   &__bio {
