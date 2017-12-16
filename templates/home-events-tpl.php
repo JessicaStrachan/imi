@@ -8,7 +8,7 @@ $results = $events->query($query_args);
 ?>
 
 <div class="container container--vh-top">
-  <h1 class="heading--one heading--bold heading--primary u-align-center">Upcoming Events</h1>
+  <h1 class="heading--one heading--bold heading--primary">Upcoming Events</h1>
   <ul class="grid grid--space-bottom">
 
     <?php
@@ -37,6 +37,6 @@ $results = $events->query($query_args);
 
   </ul>
 
-  <a class="btn btn--center lime__btn" href="/events">View All Events</a>
+  <a class="btn lime__btn" href="/events">View All Events</a>
 
 </div>

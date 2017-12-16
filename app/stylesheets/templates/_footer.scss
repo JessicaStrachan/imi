@@ -77,11 +77,15 @@
 
     &--social {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       width: 235px;
 
       &-link {
         transition: opacity .3s ease;
+        
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
 
         &:hover {
           opacity: .6;

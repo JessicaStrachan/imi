@@ -32,12 +32,13 @@
     padding: 40px;
     transform: translate(-50%, -50%);
     width: 100%;
-    z-index: 10;
+    z-index: 6;
   }
 
   &__title {
     @include font-size(5);
     color: $header-quote-color;
+    line-height: 5rem;
   }
 
   &__author {

@@ -4,10 +4,10 @@
             <h2 class="heading--two heading--bold"><a class="heading__link" href="/contact">Contact Us</a></h2>
             <a class="footer__top--contact-tel" href="tel:+44 203 189 1185">+44 203 189 1185</a>
             <a class="footer__top--contact-email" href="mailto:admin@inclusivemosqueinitiative.org">admin@inclusivemosqueinitiative.org </a>
+            <a class="footer__top--contact-email" target="_blank" href="https://inclusivemosqueinitiative.charitycheckout.co.uk/">Donate</a>
             <div class="footer__top--social">
               <a class="footer__top--social-link" target"_blank" href="https://www.facebook.com/inclusivemosqueinitiative"><i class="fa fa-facebook"></i></a>
               <a class="footer__top--social-link" target"_blank" href="https://twitter.com/inclusivemosque"><i class="fa fa-twitter"></i></a>
-              <a class="footer__top--social-link paypal-link" href="https://www.paypal.com/uk/cgi-bin/webscr?cmd=_flow&SESSION=xVevG1MrHyVz395Tgsjb5hmcdbp05nVAB6QIYcx2qKVomkYCD7fx2oQC9WS&dispatch=5885d80a13c0db1f8e263663d3faee8d83a0bf7db316a7beb1b14b43acd04037&rapidsState=Donation__DonationFlow___StateDonationBilling&rapidsStateSignature=34846b7fae7e4369413be25a6c09b0fdf7e7b1ef" target="_blank"><i class="fa fa-paypal"></i></a>
             </div>
           </div>
           <div class="footer__top--support">
