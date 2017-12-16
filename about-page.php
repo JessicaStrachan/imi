@@ -23,7 +23,6 @@ echo $image;
     <div class="grid about-intros">
       <div class="col-6">
         <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
-        <h2>Inclusive Mosque Initiative</h2>
         <p>Launched in 2012, the Inclusive Mosque Initiative is dedicated to creating places of worship marginalised communities, spiritual practice and the promotion of inclusive Islamic principles. Our events are held in the UK, usually in London. Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind.</p>
       </div>
       <div class="col-6">
