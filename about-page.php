@@ -19,16 +19,9 @@ echo $image;
 
 <section class="row row--no-margin forest-green">
   <section class="container">
-  <p class="heading--one heading--bold heading--space-bottom">Inclusive Mosque Initiative</p>
-    <div class="grid about-intros">
-      <div class="col-6">
-        <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
-        <p>Launched in 2012, the Inclusive Mosque Initiative is dedicated to creating places of worship marginalised communities, spiritual practice and the promotion of inclusive Islamic principles. Our events are held in the UK, usually in London. Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind.</p>
-      </div>
-      <div class="col-6">
-        <p>We currently host regular Friday prayers, seminars and discussion groups. We aim to create a family-friendly place of worship that welcomes people regardless of their religious belief, their race, gender, impairments, sexuality or immigration status.</p>
-      </div>
-    </div>
+    <p class="heading--one heading--bold heading--space-bottom">Inclusive Mosque Initiative</p>
+    <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
+    <p class="about-intros">Launched in 2012, the Inclusive Mosque Initiative is dedicated to creating places of worship marginalised communities, spiritual practice and the promotion of inclusive Islamic principles. Our events are held in the UK, usually in London. Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind. We currently host regular Friday prayers, seminars and discussion groups. We aim to create a family-friendly place of worship that welcomes people regardless of their religious belief, their race, gender, impairments, sexuality or immigration status.</p>
   </section>
     <!-- Branches info may be included at a a later date. -->
   <!--   <div class="two-block__section two-block__section--padding-left">
@@ -113,7 +106,7 @@ echo $image;
           <a class="link" href="https://twitter.com/khannaima">@KhanNaima</a>
         </div>
       </div>
-    </div>  
+    </div>
 
   </section>
 </section>

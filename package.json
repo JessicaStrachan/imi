@@ -23,7 +23,7 @@
     "postcss-import": "^8.1.2",
     "postcss-scss": "^0.1.8",
     "reset-css": "^2.0.2011012603",
-    "sass-brunch": "^2.6.3",
+    "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "^2.0.0"
   },
   "devDependencies": {
