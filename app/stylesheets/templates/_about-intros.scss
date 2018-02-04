@@ -1,17 +1,10 @@
 .about-intros {
-    .col-6:first-child {
-        margin-right: 20px;
-    }
+  column-count: 2;
+  column-gap: 20px;
 }
 
 @media only screen and (max-width: 768px) {
     .about-intros {
-        .col-6 {
-            width: 100%;
-
-            &:first-child {
-                margin: 0 0 20px 0;
-            }
-        }
+      column-count: 1;
     }
 }

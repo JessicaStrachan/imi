@@ -19,16 +19,9 @@ echo $image;
 
 <section class="row row--no-margin forest-green">
   <section class="container">
-  <p class="heading--one heading--bold heading--space-bottom">Inclusive Mosque Initiative</p>
-    <div class="grid about-intros">
-      <div class="col-6">
-        <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
-        <p>Launched in 2012, the Inclusive Mosque Initiative is dedicated to creating places of worship marginalised communities, spiritual practice and the promotion of inclusive Islamic principles. Our events are held in the UK, usually in London. Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind.</p>
-      </div>
-      <div class="col-6">
-        <p>We currently host regular Friday prayers, seminars and discussion groups. We aim to create a family-friendly place of worship that welcomes people regardless of their religious belief, their race, gender, impairments, sexuality or immigration status.</p>
-      </div>
-    </div>
+    <p class="heading--one heading--bold heading--space-bottom">Inclusive Mosque Initiative</p>
+    <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
+    <p class="about-intros">Launched in 2012, the Inclusive Mosque Initiative is dedicated to creating places of worship marginalised communities, spiritual practice and the promotion of inclusive Islamic principles. Our events are held in the UK, usually in London. Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind. We currently host regular Friday prayers, seminars and discussion groups. We aim to create a family-friendly place of worship that welcomes people regardless of their religious belief, their race, gender, impairments, sexuality or immigration status.</p>
   </section>
     <!-- Branches info may be included at a a later date. -->
   <!--   <div class="two-block__section two-block__section--padding-left">
@@ -113,9 +106,62 @@ echo $image;
           <a class="link" href="https://twitter.com/khannaima">@KhanNaima</a>
         </div>
       </div>
-    </div>  
+    </div>
 
   </section>
+</section>
+
+<section class="container" id="press-articles" style="margin-top:-180px; padding-top: 180px;">
+  <h2 class="heading--one heading--bold heading--primary u-align-center">Press Articles</h2>
+  <div class="grid grid--flex-wrap grid--flex-start">
+    <div class="col-3">
+      <a class="article-logo" href="https://www.theguardian.com/world/shortcuts/2013/aug/07/mission-to-build-alternative-mosque-muslims" target="_blank">
+        <div class="article-logo__image">
+          <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/the-guardian-logo.png" />
+        </div>
+      </a>
+    </div>
+
+    <div class="col-3">
+      <a class="article-logo" href="https://www.ft.com/content/2ccda9ea-17c7-11e6-bb7d-ee563a5a1cc1" target="_blank">
+        <div class="article-logo__image">
+          <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/ft-logo.png" alt="Financial Times Logo" />
+        </div>
+      </a>
+    </div>
+
+    <div class="col-3">
+      <a class="article-logo" href="https://www.youtube.com/watch?v=MBMYmhW8tU8" target="_blank">
+        <div class="article-logo__image">
+          <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/bbc-asian-network-logo.png" />
+        </div>
+      </a>
+    </div>
+
+    <div class="col-3">
+      <a class="article-logo" href="http://ebook-dl.com/magazine/marie-claire-february-2017-uk991.pdf " target="_blank">
+        <div class="article-logo__image">
+          <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/marie-claire-logo.png" />
+        </div>
+      </a>
+    </div>
+
+    <div class="col-3">
+      <a class="article-logo" href="http://www.huffingtonpost.com/2013/08/15/inclusive-mosque-initiative-britain_n_3744120.html" target="_blank">
+        <div class="article-logo__image">
+          <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/huffpost-logo-2.png" />
+        </div>
+      </a>
+    </div>
+
+    <div class="col-3">
+      <a class="article-logo" href="http://www.pinknews.co.uk/2016/10/27/bishop-imam-and-rabbi-lead-interfaith-orlando-vigil-at-pinknews-awards/" target="_blank">
+        <div class="article-logo__image">
+          <img class="article-logo__media" src="<?php echo get_template_directory_uri(); ?>/public/images/pink-news-logo.png" alt="Pink News Logo" />
+        </div>
+      </a>
+    </div>
+  </div>
 </section>
 
 <?php
