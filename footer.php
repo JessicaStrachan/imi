@@ -6,8 +6,9 @@
             <a class="footer__link" href="mailto:admin@inclusivemosqueinitiative.org">admin@inclusivemosqueinitiative.org </a>
             <a class="footer__link" target="_blank" href="https://inclusivemosqueinitiative.charitycheckout.co.uk/">Donate</a>
             <div class="footer__social">
-              <a class="footer__link" target"_blank" href="https://www.facebook.com/inclusivemosqueinitiative"><i class="fa fa-facebook"></i></a>
-              <a class="footer__link" target"_blank" href="https://twitter.com/inclusivemosque"><i class="fa fa-twitter"></i></a>
+              <a class="footer__link" target"_blank" href="https://www.facebook.com/inclusivemosqueinitiative"><span>Facebook</span><i class="fa fa-facebook"></i></a>
+              <a class="footer__link" target"_blank" href="https://twitter.com/inclusivemosque"><span>Twitter</span><i class="fa fa-twitter"></i></a>
+              <a class="footer__link" target"_blank" href="https://www.instagram.com/inclusivemosque/"><span>Instagram</span><i class="fa fa-instagram"></i></a>
             </div>
           </div>
           <div class="footer__support">
