@@ -35,15 +35,15 @@ body {
 
 .heading {
   &--one {
-    @include font-size(5);  
+    @include font-size(5);
   }
 
   &--two {
-    @include font-size(1.8);  
+    @include font-size(1.8);
   }
 
   &--three {
-    @include font-size(1.2);  
+    @include font-size(1.2);
   }
 
   &--asset {
@@ -59,7 +59,7 @@ body {
       position: absolute;
       transform: translateX(-50%);
       width: 300px;
-    }    
+    }
   }
 
   &--primary {
@@ -81,6 +81,12 @@ body {
   &--space-bottom {
     padding-bottom: 15px;
   }
+}
+
+.sr-only {
+  line-height: 0;
+  font-size: 0;
+  color: transparent
 }
 
 @media screen and(max-width: 768px) {

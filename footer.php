@@ -1,18 +1,19 @@
       <section class="footer">
         <div class="footer__top">
-          <div class="footer__top--contact">
+          <div class="footer__contact">
             <h2 class="heading--two heading--bold"><a class="heading__link" href="/contact">Contact Us</a></h2>
-            <a class="footer__top--contact-tel" href="tel:+44 203 189 1185">+44 203 189 1185</a>
-            <a class="footer__top--contact-email" href="mailto:admin@inclusivemosqueinitiative.org">admin@inclusivemosqueinitiative.org </a>
-            <a class="footer__top--contact-email" target="_blank" href="https://inclusivemosqueinitiative.charitycheckout.co.uk/">Donate</a>
-            <div class="footer__top--social">
-              <a class="footer__top--social-link" target"_blank" href="https://www.facebook.com/inclusivemosqueinitiative"><i class="fa fa-facebook"></i></a>
-              <a class="footer__top--social-link" target"_blank" href="https://twitter.com/inclusivemosque"><i class="fa fa-twitter"></i></a>
+            <a class="footer__link" href="tel:+44 203 189 1185">+44 203 189 1185</a>
+            <a class="footer__link" href="mailto:admin@inclusivemosqueinitiative.org">admin@inclusivemosqueinitiative.org </a>
+            <a class="footer__link" target="_blank" href="https://inclusivemosqueinitiative.charitycheckout.co.uk/">Donate</a>
+            <div class="footer__social">
+              <a class="footer__link" target"_blank" href="https://www.facebook.com/inclusivemosqueinitiative"><span>Facebook</span><i class="fa fa-facebook"></i></a>
+              <a class="footer__link" target"_blank" href="https://twitter.com/inclusivemosque"><span>Twitter</span><i class="fa fa-twitter"></i></a>
+              <a class="footer__link" target"_blank" href="https://www.instagram.com/inclusivemosque/"><span>Instagram</span><i class="fa fa-instagram"></i></a>
             </div>
           </div>
-          <div class="footer__top--support">
+          <div class="footer__support">
             <h2 class="heading--two heading--bold">Support Us</h2>
-            <h4>Please join our mailing list. All information is kept confidential and your identity is not shared with anyone else.</h4>
+            <h4 class="footer__info">Please join our mailing list. All information is kept confidential and your identity is not shared with anyone else.</h4>
             <?php echo do_shortcode("[mc4wp_form id='6617']"); ?>
           </div>
         </div>
@@ -29,5 +30,3 @@
 
   </body>
 </html>
-
-
