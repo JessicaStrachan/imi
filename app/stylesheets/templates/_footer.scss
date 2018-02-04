@@ -39,7 +39,7 @@
   &__support {
     border-left: 1px solid $footer-section-border;
 
-    h4 {
+    .footer__info {
       @include font-size(1.8);
       color: $footer-support-subtitle;
       margin-bottom: 20px;
