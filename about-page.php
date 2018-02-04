@@ -78,7 +78,7 @@ echo $image;
         <h4 class="team-block__name">Halima Gosai Hussain</h4>
         <p class="team-block__role">Chair & Trustee</p>
         <div class="team-block__bio">
-          <p>Halima has worked for Muslim organisations of varying perspectives for over 10 years. She has a degree in Philosophy & Theology and an MA in Middle Eastern Studies from SOAS, where her research focused on alternative Qur’anic interpretation methodologies. She is now a PhD candidate.</p>
+          <p>Halima has worked for a variety of Muslim organisations for over 10 years. With degree in Philosophy & Theology and an MA in Middle Eastern Studies from SOAS, her research focused on alternative Qur’anic interpretation methodologies. She is now a PhD candidate.</p>
           <a class="link" href="https://twitter.com/HalimaGosH">@HalimaGosH</a>
         </div>
       </div>
@@ -90,7 +90,7 @@ echo $image;
         <h4 class="team-block__name">Wasi Daniju</h4>
         <p class="team-block__role">Board Member</p>
         <div class="team-block__bio">
-          <p>Wasi is a qualified person-centred therapist, and a <a class="link" href="http://wasidaniju.500px.com/">photographer</a>, with a focus on photojournalism and depictions of lesser-represented groups. She is the photographer behind ‘Re:Present – Portraits of Black Muslim Women’.  Wasi has a keen interest in social and ecological justice, and regularly engages in community organising.</p>
+          <p>Wasi is a qualified person-centred therapist, and a <a class="link" href="http://wasidaniju.500px.com/">photographer</a>, focusing on photojournalism and depictions of lesser-represented groups. Her projects include ‘Re:Present – Portraits of Black Muslim Women’. Wasi is interested in social and ecological justice, and regularly engages in community organising.</p>
           <a class="link" href="https://twitter.com/knox_o">@knox_o</a>
         </div>
       </div>
