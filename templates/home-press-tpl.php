@@ -34,5 +34,5 @@
       </div>
 
     </div>
-    <a class="btn lime__btn" href="/articles">View More Articles</a>
+    <a class="btn lime__btn" href="/about#press-articles">View More Articles</a>
 </div>
