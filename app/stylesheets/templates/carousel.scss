@@ -3,7 +3,7 @@
 }
 
 .owl-carousel {
-  height: calc(100vh - 140px);
+  height: calc(100vh - 280px);
   top: 140px;
   overflow: hidden;
 
@@ -75,7 +75,7 @@
 
 @media only screen and (max-width: 768px) {
     .owl-carousel {
-      height: auto; 
+      height: auto;
       top: 100px;
     }
 }
