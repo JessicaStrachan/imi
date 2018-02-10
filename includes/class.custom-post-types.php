@@ -23,6 +23,9 @@ Class CustomPostTypes {
         'thumbnail',
         'page-attributes'
       ],
+      'taxonomies' => [
+        'category'
+      ],
       'rewrite' => [
         'slug' => 'events',
         'with_front' => false
