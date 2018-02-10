@@ -1,10 +1,31 @@
 .card {
-  background-color:$blog-listing-block-background;
   margin-top: 20px;
   width: calc(33.333% - 20px);
 
   &:nth-child(3n+3) {
     margin-right: 0;
+  }
+
+  .events,
+  .post {
+    background-color: $blog-listing-block-background;
+    height: 100%;
+
+    &.category-jummah {
+      background-color: $jummah-events-background;
+
+      .card {
+        &__details {
+          border-color: $jummah-events-typpgraphy;
+        }
+        &__info,
+        &__title,
+        &__excerpt,
+        &__read-more {
+          color: $jummah-events-typpgraphy;
+        }
+      }
+    }
   }
 
   &__link {

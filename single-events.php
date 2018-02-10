@@ -4,7 +4,8 @@ get_header();
 $event = new CMB2Fields(get_the_ID());
 $render_args = [
   'title' => get_the_title(),
-  'description' => get_the_content()
+  'description' => get_the_content(),
+  'category' => get_the_category()
 ];
 
 if(have_posts()): while(have_posts()): the_post();
@@ -23,6 +24,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
   <div class="post">
     <section class="post__title">
       <h1 class="heading--one heading--bold heading--primary"><?php the_title(); ?></h1>
+       <?php the_category(', '); ?>
       <h5 class="post__title--date">
         <time datetime="<?php echo $event->field('event_date_text'); ?>">
         <?php echo $event->field('event_date_text'); ?>
