@@ -32,23 +32,6 @@
       }
     }
 
-    ul li {
-      padding-left: 10px;
-      position: relative;
-
-      &::before {
-        content: '';
-        background-color: $_color-black;
-        border-radius: 50%;
-        height: 5px;
-        left: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 5px;
-      }
-    }
-
     h1,
     h2,
     h3,
