@@ -32,10 +32,10 @@ body {
 
 }
 
-
 .heading {
   &--one {
     @include font-size(4);
+    line-height: 1;
   }
 
   &--two {
@@ -80,6 +80,10 @@ body {
 
   &--space-bottom {
     padding-bottom: 15px;
+  }
+
+  &--space-bottom-large {
+    padding-bottom: 40px;
   }
 }
 
