@@ -34,7 +34,8 @@
     text-transform: uppercase;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
   	.article-logo__image {
   		opacity: .6;
   	}

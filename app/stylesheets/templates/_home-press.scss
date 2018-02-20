@@ -22,7 +22,8 @@
       width: 25%;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: .6;
       transform: opacity .2s ease;
     }

@@ -39,7 +39,8 @@
     text-decoration: none;
     transition: opacity .3s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: .6;
     }
   }
@@ -56,11 +57,13 @@
   width: 40px;
   z-index: 3;
 
-  &:hover .menu-bar::before {
+  &:hover .menu-bar::before,
+  &:focus .menu-bar::before {
     transform: translateY(-2px);
   }
 
-  &:hover .menu-bar::after {
+  &:hover .menu-bar::after,
+  &:focus .menu-bar::after {
     transform: translateY(2px);
   }
 

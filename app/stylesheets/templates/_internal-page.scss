@@ -30,7 +30,8 @@
       color: $_color-ruby;
       text-decoration: none;
 
-      &:hover {
+      &:hover,
+      &:focus {
         text-decoration: underline;
       }
     }

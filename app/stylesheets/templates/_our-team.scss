@@ -56,7 +56,8 @@
     padding-right: 10px;
     transition: opacity .3s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: .6;
     }
   }*/
