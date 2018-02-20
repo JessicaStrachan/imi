@@ -24,7 +24,6 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
   <div class="post">
     <section class="post__title">
       <h1 class="heading--one heading--bold heading--primary"><?php the_title(); ?></h1>
-       <?php the_category(', '); ?>
       <p class="post__title--date">
         <time datetime="<?php echo $event->field('event_date_text'); ?>">
         <?php echo $event->field('event_date_text'); ?>
@@ -35,7 +34,10 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
     <section class="post__content wysiwyg">
       <?php the_content(); ?>
       <div class="contaner container--slim">
-        <section class="gallery gallery--space-top grid">
+        <div class="tags">
+          <?php the_category(); ?>
+        </div>
+        <section class="gallery grid">
           <div class="gallery__image">
               <img class="gallery__media" src="<?php echo $event->field('event_gallery_image_1'); ?>">
           </div>

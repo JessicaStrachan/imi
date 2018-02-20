@@ -25,21 +25,24 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
 
         <section class="post__content wysiwyg">
             <?php the_content(); ?>
-        </section>
 
-        <div class="contaner container--slim">
-            <section class="gallery grid">
-                <div class="gallery__image">
-                    <img class="gallery__media" src="<?php echo $blog->field('blog_gallery_image_1'); ?>">
+            <div class="contaner container--slim">
+                <div class="tags">
+                  <?php the_category(); ?>
                 </div>
-                <div class="gallery__image">
-                    <img class="gallery__media" src="<?php echo $blog->field('blog_gallery_image_2'); ?>">
-                </div>
-                <div class="gallery__image">
-                    <img class="gallery__media" src="<?php echo $blog->field('blog_gallery_image_3'); ?>">
-                </div>
-            </section>
-        </div>
+                <section class="gallery grid">
+                    <div class="gallery__image">
+                        <img class="gallery__media" src="<?php echo $blog->field('blog_gallery_image_1'); ?>">
+                    </div>
+                    <div class="gallery__image">
+                        <img class="gallery__media" src="<?php echo $blog->field('blog_gallery_image_2'); ?>">
+                    </div>
+                    <div class="gallery__image">
+                        <img class="gallery__media" src="<?php echo $blog->field('blog_gallery_image_3'); ?>">
+                    </div>
+                </section>
+            </div>
+        </section>
 
     </div>
 </div>
