@@ -1,17 +1,4 @@
 // Need to rename this as no longer centers text
 .central-paragraph {
 	@include font-size(1.6);
-	margin: 40px 150px;
-}
-
-@media screen and(max-width: 768px) {
-	.central-paragraph {
-		margin: 0 40px;
-	}
-}
-
-@media screen and(max-width: 414px) {
-	.central-paragraph {
-		margin: 0;
-	}
 }
