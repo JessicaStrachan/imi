@@ -27,7 +27,6 @@
     @include font-size(1.8);
     color: $footer-links;
     font-family: $base-font;
-    padding-bottom: 5px;
     text-decoration: none;
     transition: opacity .6s ease;
 
@@ -53,7 +52,11 @@
     width: 235px;
 
     .footer__link {
+      background-color: $footer-links;
+      height: 40px;
+      position: relative;
       transition: opacity .3s ease;
+      width: 40px;
 
       &:not(:last-child) {
         margin-right: 20px;
@@ -71,7 +74,11 @@
 
     i {
       @include font-size(2.5);
-      color: $footer-links;
+      color: $footer-background;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 
