@@ -41,7 +41,8 @@
 			text-decoration: none;
 			transition: color .3s ease;
 
-			&:hover {
+			&:hover,
+			&:focus {
 				color: $_color-forest-green;
 			}
 		}

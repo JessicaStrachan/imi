@@ -18,7 +18,7 @@ echo $image;
 </section>
 
 <section class="row row--no-margin forest-green">
-  <section class="container">
+  <section class="container container--slim">
     <p class="heading--one heading--bold heading--space-bottom">Inclusive Mosque Initiative</p>
     <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
     <p class="about-intros">Launched in 2012, the Inclusive Mosque Initiative is dedicated to creating places of worship marginalised communities, spiritual practice and the promotion of inclusive Islamic principles. Our events are held in the UK, usually in London. Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind. We currently host regular Friday prayers, seminars and discussion groups. We aim to create a family-friendly place of worship that welcomes people regardless of their religious belief, their race, gender, impairments, sexuality or immigration status.</p>
@@ -31,7 +31,7 @@ echo $image;
 </section>
 
 <section class="row row--no-margin ruby">
-  <section class="container ">
+  <section class="container container--slim">
     <div class="central-paragraph">
       <h2 class="heading--one heading--bold heading--tertiary">Our Vision</h2>
       <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->

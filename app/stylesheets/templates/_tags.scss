@@ -1,0 +1,30 @@
+.tags {
+	.post-categories {
+		list-style: none;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		padding-left: 0;
+
+		li {
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+	
+
+	a {
+		background-color: $_color-ruby;
+		color: $_color-cream;
+		padding: 5px 10px;
+		font-size: 14px;
+		transition: background-color .3s ease;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			background-color: rgba($_color-ruby, .6);
+		}
+	}
+}

@@ -84,7 +84,8 @@ p.404-message__text {
 .link {
   color: rgb(145, 30, 55);
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: .6;
   }
 }

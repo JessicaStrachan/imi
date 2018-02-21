@@ -27,11 +27,11 @@
     @include font-size(1.8);
     color: $footer-links;
     font-family: $base-font;
-    padding-bottom: 5px;
     text-decoration: none;
     transition: opacity .6s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: .6;
     }
   }
@@ -53,13 +53,18 @@
     width: 235px;
 
     .footer__link {
+      background-color: $footer-links;
+      height: 40px;
+      position: relative;
       transition: opacity .3s ease;
+      width: 40px;
 
       &:not(:last-child) {
         margin-right: 20px;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         opacity: .6;
       }
 
@@ -71,7 +76,11 @@
 
     i {
       @include font-size(2.5);
-      color: $footer-links;
+      color: $footer-background;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -109,7 +118,8 @@
     color: $footer-legal-color;
     transition: opacity .3s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       cursor: pointer;
       opacity: .6;
     }

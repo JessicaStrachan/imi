@@ -14,7 +14,9 @@
 	&__link {
 		text-decoration: none;
 		transition: opacity .3s ease;
-		&:hover {
+
+		&:hover,
+		&:focus {
 			opacity: .6;
 		}
 	}
