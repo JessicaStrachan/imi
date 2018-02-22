@@ -1,5 +1,5 @@
 .tags {
-	.post-categories {
+	ul.post-categories {
 		list-style: none;
 		display: flex;
 		justify-content: flex-start;
@@ -10,21 +10,21 @@
 			&:not(:last-child) {
 				margin-right: 10px;
 			}
+
+			a {
+				background-color: rgb(145, 30, 55);
+				color: rgb(235, 210, 170);
+				padding: 5px 10px;
+				font-size: 14px;
+				transition: background-color .3s ease;
+
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					background-color: rgba(145, 30, 55, .6);
+				}
+			}
 		}
 	}
 	
-
-	a {
-		background-color: $_color-ruby;
-		color: $_color-cream;
-		padding: 5px 10px;
-		font-size: 14px;
-		transition: background-color .3s ease;
-
-		&:hover,
-		&:focus {
-			text-decoration: none;
-			background-color: rgba($_color-ruby, .6);
-		}
-	}
 }
