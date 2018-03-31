@@ -1,4 +1,5 @@
 .about-intros {
+  @include font-size(1.6);
   column-count: 2;
   column-gap: 20px;
 }

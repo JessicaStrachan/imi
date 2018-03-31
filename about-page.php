@@ -19,7 +19,7 @@ echo $image;
 
 <section class="row row--no-margin forest-green">
   <section class="container container--slim">
-    <p class="heading--one heading--bold heading--space-bottom">Inclusive Mosque Initiative</p>
+    <p class="heading--one heading--bold heading--space-bottom-large">Inclusive Mosque Initiative</p>
     <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
     <p class="about-intros">Launched in 2012, the Inclusive Mosque Initiative is dedicated to creating places of worship marginalised communities, spiritual practice and the promotion of inclusive Islamic principles. Our events are held in the UK, usually in London. Founded by Tamsila Tauqir and Dervla Zaynab Shannahan, IMI was created with their experiences of exclusion and those of many others in mind. We currently host regular Friday prayers, seminars and discussion groups. We aim to create a family-friendly place of worship that welcomes people regardless of their religious belief, their race, gender, impairments, sexuality or immigration status.</p>
   </section>
@@ -33,7 +33,7 @@ echo $image;
 <section class="row row--no-margin ruby">
   <section class="container container--slim">
     <div class="central-paragraph">
-      <h2 class="heading--one heading--bold heading--tertiary">Our Vision</h2>
+      <h2 class="heading--one heading--bold heading--tertiary heading--space-bottom-large">Our Vision</h2>
       <!-- <?php echo $about_us->format_content($about_us->field('our_vision_text')); ?> -->
       <p>At the moment we rent out different wheelchair-accessible spaces, mostly in London, to hold our events. We are working towards owning or renting a permanent space that will be a peaceful place of worship for Muslims from all backgrounds and understandings. Like our current events, it will be a place where all people are welcome, a place that respects gender expression and gender justice, and a place that houses inter-community and inter-faith dialogue. We are mindful of respecting the environment and aim to create as eco-friendly a space as possible.</p>
 
@@ -47,7 +47,7 @@ echo $image;
 </section>
 
 <section class="container">
-  <h2 class="heading--one heading--bold heading--primary u-align-center">Our Team</h2>
+  <h2 class="heading--one heading--bold heading--primary u-align-center heading--space-bottom-large">Our Team</h2>
   <section class="team">
 
     <div class="team-block">
@@ -112,7 +112,7 @@ echo $image;
 </section>
 
 <section class="container" id="press-articles" style="margin-top:-180px; padding-top: 180px;">
-  <h2 class="heading--one heading--bold heading--primary u-align-center">Press Articles</h2>
+  <h2 class="heading--one heading--bold heading--primary u-align-center heading--space-bottom-large">Press Articles</h2>
   <div class="grid grid--flex-wrap grid--flex-start">
     <div class="col-3">
       <a class="article-logo" href="https://www.theguardian.com/world/shortcuts/2013/aug/07/mission-to-build-alternative-mosque-muslims" target="_blank">

@@ -26,7 +26,7 @@ $post_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'lar
         <section class="post__content wysiwyg">
             <?php the_content(); ?>
 
-            <div class="contaner container--slim">
+            <div class="container container--slim">
                 <div class="tags">
                   <?php the_category(); ?>
                 </div>
