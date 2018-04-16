@@ -19,6 +19,7 @@ get_header(); ?>
 
 		    <?php
 	        // the query
+	        // TODO: Ideally category name would be a dynamic value.
 	        $the_query = new WP_Query(array('category_name' => 'Jummah', 'post_status' => 'publish', 'posts_per_page' => 5,
 	        ));
 	        ?>
