@@ -1,7 +1,4 @@
 <?php
-/**
-* Template Name: Contact page
-*/
 get_header(); ?>
 
 <section class="quote">
