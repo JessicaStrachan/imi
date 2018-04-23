@@ -1,5 +1,5 @@
 <div class="container container--border-top">
-  <h2 class="heading--one heading--bold heading--primary">Press Articles</h2>
+  <h2 class="heading--one heading--space-bottom-large heading--bold heading--primary">Press Articles</h2>
     <div class="grid grid--space-bottom">
       <div class="col-3">
         <a class="article-logo" href="https://www.theguardian.com/world/shortcuts/2013/aug/07/mission-to-build-alternative-mosque-muslims" target="_blank">

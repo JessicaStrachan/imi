@@ -9,10 +9,10 @@ get_header(); ?>
 </section>
 
 <div class="container">
-	<h2 class="heading--one heading--bold heading--primary u-align-center"><?php single_cat_title(); ?></h2>
+	<h2 class="heading--one heading--bold heading--primary heading--space-bottom-large"><?php single_cat_title(); ?></h2>
 
 	<section class="blog">
-		<ul class="grid grid--space-bottom">
+		<ul class="grid grid--flex-wrap grid--space-bottom">
 
 	        <?php if (have_posts()) : ?>
 	            <?php while (have_posts()) : the_post(); ?>

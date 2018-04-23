@@ -8,7 +8,7 @@ endforeach;
 ?>
 
 <div class="container container--border-top">
-  <h1 class="heading--one heading--bold heading--primary">Recent Blog Posts</h1>
+  <h1 class="heading--one heading--space-bottom-large heading--bold heading--primary">Recent Blog Posts</h1>
   <ul class="grid grid--space-bottom">
 
     <?php
