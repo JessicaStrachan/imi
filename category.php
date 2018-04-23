@@ -14,15 +14,8 @@ get_header(); ?>
 	<section class="blog">
 		<ul class="grid grid--space-bottom">
 
-		    <?php
-	        // the query
-	        // TODO: Ideally category name would be a dynamic value.
-	        $the_query = new WP_Query(array('category_name' => 'Jummah', 'post_status' => 'publish', 'posts_per_page' => 5,
-	        ));
-	        ?>
-
-	        <?php if ($the_query->have_posts()) : ?>
-	            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+	        <?php if (have_posts()) : ?>
+	            <?php while (have_posts()) : the_post(); ?>
 	            	<li class="card grid__col col-4">
 	            		<div <?php post_class() ?>>
 	            			<a class="card__link" href="<?php the_permalink(); ?>">
@@ -39,10 +32,6 @@ get_header(); ?>
 
 	           <?php endwhile; ?>
 	    </ul>
-       <?php wp_reset_postdata(); ?>
-
-
-    	<?php wp_reset_postdata(); ?>
 
 	    <?php else : ?>
 	    	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
