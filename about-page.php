@@ -86,7 +86,7 @@ echo $image;
   
      <div class="team-block">
       <img class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-4.jpg">
-		<div class="team-block__info">
+      <div class="team-block__info">
         <h4 class="team-block__name">Latifa Akay</h4>
         <p class="team-block__role">Advisor</p>
         <div class="team-block__bio">
