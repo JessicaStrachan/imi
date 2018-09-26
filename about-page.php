@@ -83,6 +83,29 @@ echo $image;
         </div>
       </div>
     </div>
+  
+     <div class="team-block">
+      <img class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/board-member-4.jpg">
+		<div class="team-block__info">
+        <h4 class="team-block__name">Latifa Akay</h4>
+        <p class="team-block__role">Advisor</p>
+        <div class="team-block__bio">
+          <p>Latifa is currently exploring culturally and socially relevant teaching pedagogies and curriculum in her role as Director of Education at the charity Maslaha. She focused on Islamic feminisms and international law in her LLM at SOAS, and previously worked as a journalist in Istanbul. </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="team-block">
+      <img class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/naima-khan.jpg">
+      <div class="team-block__info">
+        <h4 class="team-block__name">Naima Khan</h4>
+        <p class="team-block__role">Board Member & Trustee</p>
+        <div class="team-block__bio">
+          <p>Naima works in communications and has seven years’ experience producing content on the arts and religion. She has an interest in the ways artists can contribute to our understanding of socio-politics our collective histories and how this can be applied in places of worship.</p>
+          <a class="link" href="https://twitter.com/khannaima">@KhanNaima</a>
+        </div>
+      </div>
+    </div>
 
     <div class="team-block">
       <img class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/wasi-daniju.jpg">
@@ -92,18 +115,6 @@ echo $image;
         <div class="team-block__bio">
           <p>Wasi is a qualified person-centred therapist, and a <a class="link" href="http://wasidaniju.500px.com/">photographer</a>, focusing on photojournalism and depictions of lesser-represented groups. Her projects include ‘Re:Present – Portraits of Black Muslim Women’. Wasi is interested in social and ecological justice, and regularly engages in community organising.</p>
           <a class="link" href="https://twitter.com/knox_o">@knox_o</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="team-block">
-      <img class="team-block__image" src="<?php echo get_template_directory_uri(); ?>/public/images/team/naima-khan.jpg">
-      <div class="team-block__info">
-        <h4 class="team-block__name">Naima Khan</h4>
-        <p class="team-block__role">Board Member & Trustee</p>
-        <div class="team-block__bio">
-          <p>Naima works in communications and has seven years’ experience producing content on the arts and religion. She has an interest in the ways artists can contribute to our understanding of socio-politics our collective histories and how this can be applied in places of worship.</p>
-          <a class="link" href="https://twitter.com/khannaima">@KhanNaima</a>
         </div>
       </div>
     </div>
